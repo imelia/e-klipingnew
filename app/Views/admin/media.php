@@ -25,7 +25,7 @@
                     <td><?= $i++;?></td>
                     <td><img style="height: 150px; width: 150px" src="<?= base_url('uploads/'.$row['gambar']) ?>"></td>
                     <td><?= $row['nama_media'];?></td>
-                    <td><?= $rows->nama_kategori;?></td>
+                    <td><?= $row['kategori'];?></td>
                     <td>
                         <a href="#" class="btn btn-danger btn-sm btn-delete" data-id="<?= $row['id_media'];?>">Delete</a>
                     </td>
