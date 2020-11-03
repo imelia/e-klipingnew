@@ -86,3 +86,14 @@ CRITICAL - 2020-11-02 10:25:00 --> Undefined index: category
 #7 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
 #9 {main}
+CRITICAL - 2020-11-02 10:26:27 --> Undefined index: nama_kategori
+#0 C:\xampp\htdocs\e-klipingnew\app\Views\admin\media.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 28, Array)
+#1 C:\xampp\htdocs\e-klipingnew\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('admin/media', Array, true)
+#3 C:\xampp\htdocs\e-klipingnew\app\Controllers\Media.php(32): view('admin/media', Array)
+#4 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Media->index()
+#5 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Media))
+#6 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
