@@ -1,0 +1,22 @@
+CRITICAL - 2020-11-03 02:41:00 --> Undefined variable: title
+#0 C:\xampp\htdocs\e-klipingnew\app\Views\global\header.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\e-klipingnew\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('global/header', Array, true)
+#3 C:\xampp\htdocs\e-klipingnew\app\Controllers\Kategoriberita.php(34): view('global/header', Array)
+#4 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Kategoriberita->index()
+#5 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategoriberita))
+#6 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-03 02:47:28 --> Undefined variable: title
+#0 C:\xampp\htdocs\e-klipingnew\app\Views\global\header.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\e-klipingnew\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('global/header', Array, true)
+#3 C:\xampp\htdocs\e-klipingnew\app\Controllers\Kategoriberita.php(34): view('global/header', Array)
+#4 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Kategoriberita->index()
+#5 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategoriberita))
+#6 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}

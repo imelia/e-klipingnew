@@ -18,7 +18,7 @@ class Kategoriberita extends BaseController
     public function index()
     {
         $Kategoriberita = $this->KategoriberitaModel->findAll();
-
+        $data['title'] = "E-Kliping | Diskominfo Kabupaten Malang";
         $data = [
             'id_kategori_berita' => 'id_kategori_berita',
             'id_kategori' => 'id_kategori',
@@ -28,8 +28,14 @@ class Kategoriberita extends BaseController
             'tanggal' => 'tanggal',
             'gambar_berita' => 'gambar berita',
             'kategoriberita' => $Kategoriberita
-
+           
         ];
+
+        echo view('global/header', $data); 
+        echo view('global/sidebar');
+        echo view('global/topbar', $data);
+        echo view('admin/kategori_berita', $data);
+        echo view('global/footer');
         return view('admin/Kategori_berita', $data);
     }
 }

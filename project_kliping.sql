@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 26 Okt 2020 pada 04.58
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.2.28
+-- Waktu pembuatan: 03 Nov 2020 pada 09.54
+-- Versi server: 10.4.14-MariaDB
+-- Versi PHP: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -65,9 +64,7 @@ CREATE TABLE `kategori_berita` (
 
 CREATE TABLE `media` (
   `id_media` int(11) NOT NULL,
-  `nama_media` varchar(255) NOT NULL,
-  `gambar` text NOT NULL,
-  `kategori` int(11) NOT NULL
+  `nama_media` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
