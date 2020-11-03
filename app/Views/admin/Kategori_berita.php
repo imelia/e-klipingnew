@@ -16,7 +16,7 @@
                 </tr>
             </thead>
             <tbody>
-            <?php foreach($kategori_berita as $row):?>
+            <?php foreach($kategoriberita as $row):?>
                 <tr>
                     <td><?= $row->id_kategori_berita;?></td>
                     <td><?= $row->id_kategori;?></td>

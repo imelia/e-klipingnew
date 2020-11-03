@@ -1,4 +1,6 @@
-<?php namespace App\Controllers;
+<?php 
+
+namespace App\Controllers;
 
 // Tambahkan Upload Model di sini
 use App\Models\KategoriberitaModel;
@@ -6,14 +8,17 @@ use App\Models\KategoriberitaModel;
 class Kategoriberita extends BaseController
 {
     protected $KategoriberitaModel;
+
     public function __Construct()
+
     {
         $this->KategoriberitaModel = new KategoriberitaModel();
     }
 
     public function index()
     {
-        $kategori_berita = $this->KategoriberitaModel->findAll();
+        $Kategoriberita = $this->KategoriberitaModel->findAll();
+
         $data = [
             'id_kategori_berita' => 'id_kategori_berita',
             'id_kategori' => 'id_kategori',
@@ -22,9 +27,9 @@ class Kategoriberita extends BaseController
             'nama_media' => 'nama_media',
             'tanggal' => 'tanggal',
             'gambar_berita' => 'gambar berita',
-            'kategori_berita' => $kategori_berita
+            'kategoriberita' => $Kategoriberita
 
         ];
-        return view('admin/kategoriberita', compact('data'));
+        return view('admin/Kategori_berita', $data);
     }
 }
