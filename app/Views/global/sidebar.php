@@ -41,6 +41,12 @@
 </li>
 
 <li class="nav-item">
+  <a class="nav-link" href="<?= base_url('kategoriberita');?>">
+  <i class="fas fa-fw fa-table"></i>
+    <span>Kategori Berita</span></a>
+</li>
+
+<li class="nav-item">
   <a class="nav-link" href="<?= base_url('profile');?>">
     <i class="fas fa-fw fa-user"></i>
     <span>Profile</span></a>

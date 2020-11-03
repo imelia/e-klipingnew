@@ -97,3 +97,72 @@ CRITICAL - 2020-11-02 10:26:27 --> Undefined index: nama_kategori
 #7 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
 #9 {main}
+CRITICAL - 2020-11-02 20:01:58 --> Undefined variable: kategori_berita
+#0 C:\xampp\htdocs\e-klipingnew\app\Views\admin\Kategoriberita.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\e-klipingnew\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('admin/kategorib...', Array, true)
+#3 C:\xampp\htdocs\e-klipingnew\app\Controllers\Kategoriberita.php(12): view('admin/kategorib...', Array)
+#4 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Kategoriberita->index()
+#5 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategoriberita))
+#6 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-02 20:09:10 --> Call to a member function getKategoriberita() on array
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Kategoriberita->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategoriberita))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-02 20:09:14 --> Call to a member function getKategoriberita() on array
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Kategoriberita->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategoriberita))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-02 20:17:53 --> Undefined variable: kategori_berita
+#0 C:\xampp\htdocs\e-klipingnew\app\Views\admin\Kategoriberita.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\e-klipingnew\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('admin/kategorib...', Array, true)
+#3 C:\xampp\htdocs\e-klipingnew\app\Controllers\Kategoriberita.php(28): view('admin/kategorib...', Array)
+#4 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Kategoriberita->index()
+#5 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategoriberita))
+#6 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-02 20:18:29 --> Undefined variable: kategori_berita
+#0 C:\xampp\htdocs\e-klipingnew\app\Views\admin\Kategoriberita.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\e-klipingnew\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('admin/kategorib...', Array, true)
+#3 C:\xampp\htdocs\e-klipingnew\app\Controllers\Kategoriberita.php(28): view('admin/kategorib...', Array)
+#4 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Kategoriberita->index()
+#5 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategoriberita))
+#6 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-02 20:18:30 --> Undefined variable: kategori_berita
+#0 C:\xampp\htdocs\e-klipingnew\app\Views\admin\Kategoriberita.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\e-klipingnew\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('admin/kategorib...', Array, true)
+#3 C:\xampp\htdocs\e-klipingnew\app\Controllers\Kategoriberita.php(28): view('admin/kategorib...', Array)
+#4 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Kategoriberita->index()
+#5 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategoriberita))
+#6 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-02 20:18:30 --> Undefined variable: kategori_berita
+#0 C:\xampp\htdocs\e-klipingnew\app\Views\admin\Kategoriberita.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\e-klipingnew\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('admin/kategorib...', Array, true)
+#3 C:\xampp\htdocs\e-klipingnew\app\Controllers\Kategoriberita.php(28): view('admin/kategorib...', Array)
+#4 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Kategoriberita->index()
+#5 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategoriberita))
+#6 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
