@@ -10,6 +10,6 @@ class Home extends BaseController
             'judul' => 'Tampilan User'
         ];
 
-        echo view('templateuser/v_wrapper', $data);
+        echo view('templateuser', $data);
     }  
 }

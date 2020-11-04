@@ -3,50 +3,30 @@ use CodeIgniter\Model;
  
 class MediaModel extends Model
 {
-    protected $table;
-
-    public function __construct() {
-
-        parent::__construct();
-        $db = \Config\Database::connect();
-        $this->table = $this->db->table('media');
-        $this->qrs = $this->db->table('kategori');
-    }
+    protected $table = 'media';
      
-    public function get_uploads()
+    public function getMedia()
     {
-        return $this->table->get()->getResultArray();
+        return $this->findAll();  
     }
-
-    public function getCategory()
+    public function SimpanMedia($data)
     {
-        return $this->qrs->get()->getResultArray();
-    }
-
-    public function insert_gambar($data)
-    {
-        return $this->table->insert($data);
-    }
-
-    public function deleteImage($id)
-    {
-        return $this->table->delete(array('id_media' => $id));
-    }
-
-    public function saveCategory($data)
-    {
-        return $this->qrs->insert($data);
-    }
-
-    public function deleteCategory($id)
-    {
-        return $this->qrs->delete(array('id_kategori' => $id));
-    }
-
-    public function updateCategory($data, $id)
-    {
-        $query = $this->qrs->update($data, array('id_kategori' => $id));
+        $query = $this->db->table($this->table)->insert($data);
         return $query;
     }
-
+    public function PilihMedia($id)
+    {
+         $query = $this->getWhere(['id_media' => $id]);
+         return $query;
+    }
+    public function edit_data($id,$data)
+    {
+        $query = $this->db->table($this->table)->update($data, array('id_media' => $id));
+        return $query;
+    }
+    public function HapusMedia($id)
+    {
+        $query = $this->db->table($this->table)->delete(array('id_media' => $id));
+        return $query;
+    }
  }

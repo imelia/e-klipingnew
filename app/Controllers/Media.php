@@ -1,115 +1,109 @@
-<?php namespace App\Controllers;
+<?php 
 
-// Tambahkan Upload Model di sini
+namespace App\Controllers;
+ 
+use CodeIgniter\Controller;
+
 use App\Models\MediaModel;
-
+ 
 class Media extends BaseController
 {
-
-    protected $model_upload;
-
-    public function __construct() {
-
-        // Memanggil form helper
-        helper('form');
-        // Menyiapkan variabel untuk menampung upload model
-        $this->model_upload = new MediaModel();
-    }
-
-	public function index()
+    public function index()
     {
+        $session = session();
+        $model = new MediaModel();
         if (!$this->validate([]))
         {
             $data['validation'] = $this->validator;
-            $session = session();
-            $data['title'] = "E-Kliping | Diskominfo Kabupaten Probolinggo";
-            $data['session'] = $session;
-            $data['category'] = $this->model_upload->getCategory();
-            $data['uploads'] = $this->model_upload->get_uploads();
-            echo view('global/header', $data);
-            echo view('global/sidebar');
-            echo view('global/topbar', $data);
-            echo view('admin/media', $data);
-            echo view('global/footer');
+            $data['media'] = $model->getMedia();
+            return view('v_medialist2',$data);
+            
         }
     }
- 
-    public function process()
-    {
 
+    public function form(){
+        helper('form');
+        return view('v_mediaform');
+    }
+
+    public function simpan(){
+        $model = new MediaModel();
         if ($this->request->getMethod() !== 'post') {
-            return redirect()->to(base_url('media'));
+            return redirect()->to('media');
         }
-
-        $validated = $this->validate([
+        $validation = $this->validate([
             'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,image/jpg,image/jpeg,image/gif,image/png]|max_size[file_upload,4096]'
         ]);
  
-        if ($validated == FALSE) {
+        if ($validation == FALSE) {
+        $data = array(
+            'nama_media'  => $this->request->getPost('nama_media'),
             
-            // Kembali ke function index supaya membawa data uploads dan validasi
-            return $this->index();
-
+        );
         } else {
-
-            $avatar = $this->request->getFile('file_upload');
-            $avatar->move(ROOTPATH . 'public/uploads');
-
-            $data = [
-                'nama_media' => $this->request->getPost('media_name'),
-                'gambar' => $avatar->getName()
-            ];
-    
-            $this->model_upload->insert_gambar($data);
-            return redirect()->to(base_url('media')); 
+            $upload = $this->request->getFile('file_upload');
+            $upload->move(WRITEPATH . '../public/assets/img/media/');
+        $data = array(
+            'nama_media'  => $this->request->getPost('nama_media'),
+            
+            
+        );
         }
-
+        $model->SimpanMedia($data);
+        return redirect()->to('./media')->with('berhasil', 'Data Berhasil di Simpan');
     }
 
-    public function delete()
-    {
-        $id = $this->request->getPost('news_id');
-        $this->model_upload->deleteImage($id);
-        return redirect()->to('/media');
+    public function form_edit($id){
+        $model = new MediaModel();
+        helper('form');
+        $data['media'] = $model->PilihMedia($id)->getRow();
+        return view('v_mediaedit',$data);
     }
 
-    public function category()
-    {
-        $session = session();
-        $data['title'] = "E-Kliping | Diskominfo Kabupaten Probolinggo";
-        $data['session'] = $session;
-        $data['category'] = $this->model_upload->getCategory();
-        echo view('global/header', $data);
-        echo view('global/sidebar');
-        echo view('global/topbar', $data);
-        echo view('admin/category', $data);
-        echo view('global/footer');
-    }
-
-    public function category_save()
-    {
+    public function edit(){
+        $model = new MediaModel();
+        if ($this->request->getMethod() !== 'post') {
+            return redirect()->to('media');
+        }
+        $id = $this->request->getPost('id_media');
+        $validation = $this->validate([
+            'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,image/jpg,image/jpeg,image/gif,image/png]|max_size[file_upload,4096]'
+        ]);
+ 
+        if ($validation == FALSE) {
         $data = array(
-            'nama_kategori'        => $this->request->getPost('media_name'),
+            'nama_media'  => $this->request->getPost('nama_media'),
+            
+           
         );
-        $this->model_upload->saveCategory($data);
-        return redirect()->to('/media/category');
-    }
-
-    public function category_update()
-    {
-        $id = $this->request->getPost('news_id');
+        } else {
+        $dt = $model->PilihMedia($id)->getRow();
+        
+        $path = '../public/assets/img/media/';
+       
+            $upload = $this->request->getFile('file_upload');
+            $upload->move(WRITEPATH . '../public/assets/img/media/');
         $data = array(
-            'nama_kategori'        => $this->request->getPost('media_name'),
+            'nama_media'  => $this->request->getPost('nama_media'),
+           
+        
+            
         );
-        $this->model_upload->updateCategory($data, $id);
-        return redirect()->to('/media/category');
+        }
+        
+        $model->edit_data($id,$data);
+        return redirect()->to('./media')->with('berhasil', 'Data Berhasil di Ubah');
+        
     }
 
-    public function category_delete()
-    {
-        $id = $this->request->getPost('news_id');
-        $this->model_upload->deleteCategory($id);
-        return redirect()->to('/media/category');
+    public function hapus($id){
+        $model = new MediaModel();
+        $dt = $model->PilihMedia($id)->getRow();
+        $model->HapusMedia($id);
+      
+        $path = '../public/assets/img/media/';
+      
+        return redirect()->to('./media')->with('berhasil', 'Data Berhasil di Hapus');
     }
 
 }

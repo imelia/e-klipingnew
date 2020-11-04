@@ -1,14 +1,13 @@
 <div class="container">
     <h3>Media Management</h3>
     <button type="button" class="btn btn-success mb-2" data-toggle="modal" data-target="#addModal">Add New</button>
-    <a class="btn btn-info mb-2" href="media/category">Category</a>
+    <a class="" href=""></a>
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Image</th>
-                    <th>Name of Image</th>
-                    <th>Category</th>
+                   
+                    <th>Name Media</th>
                     <th>Action</th>
                 </tr>
             </thead>
@@ -17,16 +16,17 @@
             $i = 0;
             foreach($uploads as $row):
                 $db      = \Config\Database::connect();
-                $query = $db->query("SELECT * FROM kategori WHERE id_kategori = '".$row['kategori']."'");
-                $rows = $query->getRow();
+
+             
                 $i++;
                 ?>
                 <tr>
                     <td><?= $i++;?></td>
-                    <td><img style="height: 150px; width: 150px" src="<?= base_url('uploads/'.$row['gambar']) ?>"></td>
+    
                     <td><?= $row['nama_media'];?></td>
-                    <td><?= $row['kategori'];?></td>
+                   
                     <td>
+                    <a href="#" class="btn btn-info btn-sm btn-edit" data-id="<?= $row->id_media;?>">Edit</a>
                         <a href="#" class="btn btn-danger btn-sm btn-delete" data-id="<?= $row['id_media'];?>">Delete</a>
                     </td>
                 </tr>
@@ -48,27 +48,14 @@
                 </button>
             </div>
             <div class="modal-body">
-            
+          
+
                 <div class="form-group">
-                    <label>Name of Image</label>
+                    <label>Name Media</label>
                     <input type="text" class="form-control" name="media_name" placeholder="Media Name">
                 </div>
 
-                <div class="form-group">
-                    <label>Input Image</label>
-                    <input type="file" name="file_upload" class="form-control" placeholder="Link News">
-                </div>
-
-                <div class="form-group">
-                    <label>Category Image</label>
-                    <select class="form-control" name="category">
-                        <option value="0">-- pilih salah satu --</option>
-                        <?php foreach($category as $c): ?>
-                        <option value="<?= $c['id_kategori'] ?>"><?= $c['nama_kategori'] ?></option>
-                        <?php endforeach; ?>
-                    </select>
-                </div>
-            
+                
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -1,0 +1,136 @@
+CRITICAL - 2020-11-03 08:13:20 --> Undefined index: judul_kategori
+#0 C:\xampp\htdocs\e-klipingnew\app\Views\v_kategorilist2.php(202): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 202, Array)
+#1 C:\xampp\htdocs\e-klipingnew\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('v_kategorilist2', Array, true)
+#3 C:\xampp\htdocs\e-klipingnew\app\Controllers\Kategori.php(19): view('v_kategorilist2', Array)
+#4 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Kategori->index()
+#5 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#6 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-03 08:25:38 --> Undefined variable: title
+#0 C:\xampp\htdocs\e-klipingnew\app\Views\v_kategorilist2.php(12): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 12, Array)
+#1 C:\xampp\htdocs\e-klipingnew\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('v_kategorilist2', Array, true)
+#3 C:\xampp\htdocs\e-klipingnew\app\Controllers\Kategori.php(19): view('v_kategorilist2', Array)
+#4 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Kategori->index()
+#5 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#6 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-03 08:28:07 --> Unknown column 'judul_kategori' in 'field list'
+#0 C:\xampp\htdocs\e-klipingnew\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ka...')
+#1 C:\xampp\htdocs\e-klipingnew\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ka...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ka...')
+#3 C:\xampp\htdocs\e-klipingnew\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ka...', Array, false)
+#4 C:\xampp\htdocs\e-klipingnew\app\Models\Modelkategori.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\e-klipingnew\app\Controllers\Kategori.php(52): App\Models\Modelkategori->SimpanKategori(Array)
+#6 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Kategori->simpan()
+#7 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#8 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2020-11-03 08:29:56 --> Unknown column 'link' in 'field list'
+#0 C:\xampp\htdocs\e-klipingnew\system\Database\MySQLi\Connection.php(331): mysqli->query('INSERT INTO `ka...')
+#1 C:\xampp\htdocs\e-klipingnew\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ka...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ka...')
+#3 C:\xampp\htdocs\e-klipingnew\system\Database\BaseBuilder.php(2249): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ka...', Array, false)
+#4 C:\xampp\htdocs\e-klipingnew\app\Models\Modelkategori.php(14): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\e-klipingnew\app\Controllers\Kategori.php(52): App\Models\Modelkategori->SimpanKategori(Array)
+#6 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Kategori->simpan()
+#7 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#8 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2020-11-03 08:32:15 --> Undefined property: stdClass::$gambar_kategori
+#0 C:\xampp\htdocs\e-klipingnew\app\Controllers\Kategori.php(103): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 103, Array)
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Kategori->hapus('3')
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kategori))
+#3 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-11-03 19:01:22 --> Undefined index: kategori
+#0 C:\xampp\htdocs\e-klipingnew\app\Views\admin\media.php(19): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 19, Array)
+#1 C:\xampp\htdocs\e-klipingnew\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('admin/media', Array, true)
+#3 C:\xampp\htdocs\e-klipingnew\app\Controllers\Media.php(32): view('admin/media', Array)
+#4 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Media->index()
+#5 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Media))
+#6 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-03 19:01:48 --> Undefined variable: query
+#0 C:\xampp\htdocs\e-klipingnew\app\Views\admin\media.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20, Array)
+#1 C:\xampp\htdocs\e-klipingnew\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('admin/media', Array, true)
+#3 C:\xampp\htdocs\e-klipingnew\app\Controllers\Media.php(32): view('admin/media', Array)
+#4 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Media->index()
+#5 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Media))
+#6 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2020-11-03 19:09:22 --> Class 'App\Models\MediaModel' not found
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(890): App\Controllers\Media->__construct()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-03 19:16:29 --> Class 'App\Models\MediaModel' not found
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Media->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Media))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-03 19:17:48 --> Class 'App\Models\MediaModel' not found
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Media->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Media))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-03 19:18:12 --> Class 'App\Controllers\ModelMedia' not found
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Media->form_edit('1')
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Media))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-03 19:21:01 --> Class 'App\Controllers\ModelMedia' not found
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Media->form_edit('1')
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Media))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-03 20:21:51 --> Table 'project_kliping.tb_berita' doesn't exist
+#0 C:\xampp\htdocs\e-klipingnew\system\Database\MySQLi\Connection.php(331): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\e-klipingnew\system\Database\BaseConnection.php(741): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Database\BaseConnection.php(669): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\e-klipingnew\system\Database\BaseBuilder.php(1860): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\e-klipingnew\app\Models\NewsModel.php(17): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\e-klipingnew\app\Controllers\News.php(15): App\Models\NewsModel->getBerita()
+#6 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\News->index()
+#7 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#8 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2020-11-03 21:40:44 --> Invalid file: templateuser.php
+#0 C:\xampp\htdocs\e-klipingnew\system\View\View.php(228): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templateuser.ph...')
+#1 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('templateuser', Array, true)
+#2 C:\xampp\htdocs\e-klipingnew\app\Controllers\Home.php(13): view('templateuser', Array)
+#3 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#4 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#5 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#8 {main}

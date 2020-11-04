@@ -22,9 +22,9 @@
 
 <!-- Nav Item - Charts -->
 <li class="nav-item">
-  <a class="nav-link" href="<?= base_url('news');?>">
+  <a class="nav-link" href="<?= base_url('berita');?>">
     <i class="fas fa-fw fa-newspaper"></i>
-    <span>News</span></a>
+    <span>Berita</span></a>
 </li>
 
 <li class="nav-item">
@@ -41,10 +41,11 @@
 </li>
 
 <li class="nav-item">
-  <a class="nav-link" href="<?= base_url('kategoriberita');?>">
+  <a class="nav-link" href="<?= base_url('kategori');?>">
   <i class="fas fa-fw fa-table"></i>
-    <span>Kategori Berita</span></a>
+    <span>Kategori</span></a>
 </li>
+
 
 <li class="nav-item">
   <a class="nav-link" href="<?= base_url('profile');?>">
