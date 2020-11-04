@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 26 Okt 2020 pada 04.58
--- Versi server: 10.4.11-MariaDB
--- Versi PHP: 7.2.28
+-- Waktu pembuatan: 04 Nov 2020 pada 04.56
+-- Versi server: 10.4.14-MariaDB
+-- Versi PHP: 7.4.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -21,6 +20,26 @@ SET time_zone = "+00:00";
 --
 -- Database: `project_kliping`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `berita`
+--
+
+CREATE TABLE `berita` (
+  `id_berita` int(11) NOT NULL,
+  `judul_berita` varchar(255) NOT NULL,
+  `tanggal` date NOT NULL,
+  `gambar_berita` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `berita`
+--
+
+INSERT INTO `berita` (`id_berita`, `judul_berita`, `tanggal`, `gambar_berita`) VALUES
+(1, 'asu', '2020-11-04', 'IMG_21800460154359.jpeg');
 
 -- --------------------------------------------------------
 
@@ -38,8 +57,9 @@ CREATE TABLE `kategori` (
 --
 
 INSERT INTO `kategori` (`id_kategori`, `nama_kategori`) VALUES
-(1, 'Informasi'),
-(2, 'Berita');
+(1, 'POLITIK'),
+(2, 'EKONOMI'),
+(5, 'OLAHRAGA');
 
 -- --------------------------------------------------------
 
@@ -48,13 +68,19 @@ INSERT INTO `kategori` (`id_kategori`, `nama_kategori`) VALUES
 --
 
 CREATE TABLE `kategori_berita` (
-  `id_kategori_berita` int(11) NOT NULL,
   `id_kategori` int(11) NOT NULL,
-  `nama_kategori` varchar(255) NOT NULL,
-  `id_media` int(11) NOT NULL,
-  `nama_media` varchar(255) NOT NULL,
-  `tanggal` datetime NOT NULL,
-  `gambar_berita` varchar(255) NOT NULL
+  `id_berita` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `kategori_media`
+--
+
+CREATE TABLE `kategori_media` (
+  `id_kategori` int(11) NOT NULL,
+  `id_media` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -65,10 +91,17 @@ CREATE TABLE `kategori_berita` (
 
 CREATE TABLE `media` (
   `id_media` int(11) NOT NULL,
-  `nama_media` varchar(255) NOT NULL,
-  `gambar` text NOT NULL,
-  `kategori` int(11) NOT NULL
+  `nama_media` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `media`
+--
+
+INSERT INTO `media` (`id_media`, `nama_media`) VALUES
+(1, 'Jawa Pos'),
+(2, 'Radar Bromo'),
+(3, 'Pantura');
 
 -- --------------------------------------------------------
 
@@ -82,18 +115,6 @@ CREATE TABLE `profile` (
   `gambar` varchar(255) NOT NULL,
   `alamat_kantor` varchar(255) NOT NULL,
   `tujuan` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
--- Struktur dari tabel `tb_berita`
---
-
-CREATE TABLE `tb_berita` (
-  `id_berita` int(11) NOT NULL,
-  `link_berita` varchar(255) NOT NULL,
-  `kategori` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -119,12 +140,19 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`user_id`, `user_name`, `user_email`, `user_password`, `user_created_at`, `user_access`, `user_status`) VALUES
 (1, 'Diajeng Shinta', 'diajeng@gmail.com', 'ajeng123', '2020-10-23 09:49:34', 1, 1),
 (2, 'Diajeng Shinta', 'diajengshinta@gmail.com', 'ajeng123', '2020-10-23 09:47:49', 0, 0),
-(3, 'Diajeng Shinta ', 'diajeng12@gmail.com', '$2y$10$/WW6G7hAtYFWh/TQzJo5K.y', '2020-10-23 11:41:42', 0, 0),
-(4, 'intan restanti', 'intan123@gmail.com', '$2y$10$RUNI3nsqPLynm8BAw3aopuF', '2020-10-23 11:43:47', 0, 0);
+(3, 'Admin', 'diajeng12@gmail.com', '$2y$10$/WW6G7hAtYFWh/TQzJo5K.y', '2020-11-03 00:29:11', 0, 0),
+(4, 'intan restanti', 'intan123@gmail.com', '$2y$10$RUNI3nsqPLynm8BAw3aopuF', '2020-10-23 11:43:47', 0, 0),
+(6, 'ADMIN', 'Admin@gmail.com', '123456', '2020-11-03 00:34:34', 0, 0);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indeks untuk tabel `berita`
+--
+ALTER TABLE `berita`
+  ADD PRIMARY KEY (`id_berita`);
 
 --
 -- Indeks untuk tabel `kategori`
@@ -133,22 +161,10 @@ ALTER TABLE `kategori`
   ADD PRIMARY KEY (`id_kategori`);
 
 --
--- Indeks untuk tabel `kategori_berita`
---
-ALTER TABLE `kategori_berita`
-  ADD PRIMARY KEY (`id_kategori_berita`);
-
---
 -- Indeks untuk tabel `media`
 --
 ALTER TABLE `media`
   ADD PRIMARY KEY (`id_media`);
-
---
--- Indeks untuk tabel `tb_berita`
---
-ALTER TABLE `tb_berita`
-  ADD PRIMARY KEY (`id_berita`);
 
 --
 -- Indeks untuk tabel `users`
@@ -162,34 +178,28 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT untuk tabel `berita`
+--
+ALTER TABLE `berita`
+  MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT untuk tabel `kategori`
 --
 ALTER TABLE `kategori`
-  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- AUTO_INCREMENT untuk tabel `kategori_berita`
---
-ALTER TABLE `kategori_berita`
-  MODIFY `id_kategori_berita` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_kategori` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `media`
 --
 ALTER TABLE `media`
-  MODIFY `id_media` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT untuk tabel `tb_berita`
---
-ALTER TABLE `tb_berita`
-  MODIFY `id_berita` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_media` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
