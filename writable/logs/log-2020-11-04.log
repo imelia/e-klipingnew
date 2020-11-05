@@ -93,3 +93,151 @@ CRITICAL - 2020-11-04 20:33:11 --> Undefined variable: u
 #10 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #11 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
 #12 {main}
+CRITICAL - 2020-11-04 21:31:32 --> Class 'App\Controllers\HomeModel' not found
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(890): App\Controllers\Home2->__Construct()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:31:46 --> Class 'App\Controllers\HomeModel' not found
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(890): App\Controllers\Home2->__Construct()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:32:08 --> Class 'App\Controllers\HomeModel' not found
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(890): App\Controllers\Home2->__Construct()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:33:03 --> Class 'App\Controllers\HomeModel' not found
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(890): App\Controllers\Home2->__Construct()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:33:35 --> Class 'App\Controllers\HomeModel' not found
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(890): App\Controllers\Home2->__Construct()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:34:07 --> Class 'App\Controllers\HomeModel' not found
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(890): App\Controllers\Home2->__Construct()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:35:45 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:36:04 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:37:46 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:42:22 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:42:42 --> Undefined variable: Home
+#0 C:\xampp\htdocs\e-klipingnew\app\Controllers\Home.php(22): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 22, Array)
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#3 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2020-11-04 21:50:55 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:51:07 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:52:46 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:52:53 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:53:12 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:53:39 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:53:47 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:53:59 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:54:23 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-04 21:54:43 --> Call to a member function findAll() on null
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\Home->index()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}

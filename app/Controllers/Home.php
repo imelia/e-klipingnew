@@ -24,6 +24,7 @@ class Home extends BaseController
         ];
 
         echo view('templateuser/v_wrapper', $data);
+    
     }  
 
 }
