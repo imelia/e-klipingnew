@@ -18,7 +18,13 @@
     <?=form_open_multipart(base_url('media/simpan'));?>
     <div class="row">
     	<div class="col-lg-12">
-    		
+		<div class="row">
+            <div class="col-md-12">
+                    <label>Gambar Koran</label>
+                    <div class="form-group">
+                         <input type="file" name="file_upload" class="form-control is-invalid"> 
+                    </div>  
+                </div>
     				<label>NAMA MEDIA</label>
     				<div class="form-group">
                    		 <input type="text" name="nama_media" class="form-control"> 

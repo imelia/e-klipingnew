@@ -20,7 +20,7 @@
     	<div class="col-lg-12">
     		<div class="row">
             <div class="col-md-12">
-                    <label>Gambar</label><br/>
+                    <label>Icon</label><br/>
                     <?php
                         if (!empty($berita->gambar_berita)) {
                             echo '<img src="'.base_url("assets/img/berita/$berita->gambar_berita").'" width="150">';
@@ -35,6 +35,11 @@
     				<div class="form-group">
                         <input type="hidden" name="id_berita" class="form-control" value="<?=$berita->id_berita?>">
                             <input type="text" name="judul_berita" class="form-control" value="<?=$berita->judul_berita?>"> 
+
+                    <label>KATEGORI BERITA</label>
+    				<div class="form-group">
+                        <input type="hidden" name="id" class="form-control" value="<?=$berita->kategori?>">
+                            <input type="text" name="kategori" class="form-control" value="<?=$berita->kategori?>"> 
                            
                 	</div>	
     			</div>

@@ -20,7 +20,7 @@
     	<div class="col-lg-12">
     		<div class="row">
             <div class="col-md-12">
-                    <label>Gambar Berita</label>
+                    <label>Icon Berita</label>
                     <div class="form-group">
                          <input type="file" name="file_upload" class="form-control is-invalid"> 
                     </div>  
@@ -30,13 +30,20 @@
     				<div class="form-group">
                    		 <input type="text" name="judul_berita" class="form-control"> 
                 	</div>	
+				</div>
+				<div class="col-md-12">
+    				<label>KATEGORI BERITA</label>
+    				<div class="form-group">
+                   		 <input type="text" name="kategori" class="form-control"> 
+                	</div>	
     			</div>
 				<div class="col-md-12">
     				<label>TANGGAL</label>
     				<div class="form-group">
-                   		 <input type="date" name="tanggal" class="form-control"> 
+							<input type="date" name="tanggal" class="form-control"> 
                 	</div>	
-    			</div>
+				</div>
+
     			<div class="col-md-12">
     				<div class="form-group">
 							 <button class="btn btn-primary" onclick="return confirm('Apakah Anda yakin ?')">Simpan</button>

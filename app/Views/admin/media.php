@@ -6,7 +6,6 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                   
                     <th>Name Media</th>
                     <th>Action</th>
                 </tr>

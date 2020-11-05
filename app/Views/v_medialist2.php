@@ -74,7 +74,6 @@
 </li>
 
 
-
 <li class="nav-item">
   <a class="nav-link" href="<?= base_url('profile');?>">
     <i class="fas fa-fw fa-user"></i>
@@ -135,60 +134,64 @@
   </nav>
   <!-- End of Topbar -->
 
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
+     <!-- Begin Page Content -->
+     <div class="container-fluid">
 
-          <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-          <p class="mb-4"></a></p>
-          <a href="/media/form" class="btn btn-primary"  onclick="return confirm('Apakah Anda yakin ?')"><span class="fa fa-plus"></span> Input Data Media</a>
-          <hr>
-            <?php if(!empty(session()->getFlashdata('berhasil'))){ ?>
-                <div class="alert alert-success">
-                    <?php echo session()->getFlashdata('berhasil');?>
-                </div>
-            <?php } ?>
-            
-            <?php 
-                $errors = $validation->getErrors();
-                if(!empty($errors))
-                {
-                    echo $validation->listErrors();
-                }
-            ?>
-          <!-- DataTales Example -->
-          <div class="card shadow mb-4">
-            <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
-            </div>
-            
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>No</th>
-                      <th>Nama Media</th>
-                      <th>Aksi</th>
-                    </tr>
-                  </thead>
-                  <?php foreach($media as $row):?>
-                <tr>
-                    <td><?=$row['id_media'];?></td>
-                    <td><?=$row['nama_media'];?></td>
-                    
-                    
-                    <td><a href="media/form_edit/<?=$row['id_media'];?>" class="btn btn-primary" onclick="return confirm('Apakah Anda yakin ingin mengedit media <?php echo $row['nama_media']; ?> ini?')">Edit</a> | <a href="media/hapus/<?=$row['id_media'];?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus media <?php echo $row['nama_media']; ?> ini?')">Hapus</a> </td>
-                </tr>
-                <?php endforeach;?>
-                </table>
-              </div>
-            </div>
-          </div>
+<!-- Page Heading -->
+<h1 class="h3 mb-2 text-gray-800">Tables</h1>
+<p class="mb-4"></a></p>
+<a href="/media/form" class="btn btn-primary"  onclick="return confirm('Apakah Anda yakin ?')"><span class="fa fa-plus"></span> Input Data Media</a>
+<hr>
+  <?php if(!empty(session()->getFlashdata('berhasil'))){ ?>
+      <div class="alert alert-success">
+          <?php echo session()->getFlashdata('berhasil');?>
+      </div>
+  <?php } ?>
+  
+  <?php 
+      $errors = $validation->getErrors();
+      if(!empty($errors))
+      {
+          echo $validation->listErrors();
+      }
+  ?>
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+  <div class="card-header py-3">
+    <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+  </div>
+  
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Gambar Koran</th>
+            <th>Nama Media</th>
+            <th>Aksi</th>
+          </tr>
+        </thead>
+        <?php foreach($media as $row):?>
+      <tr>
+          <td><?=$row['id_media'];?></td>
+          <td><?php
+              if (!empty($row["gambar_koran"])) {
+                  echo '<img src="'.base_url("assets/img/media/$row[gambar_koran]").'" width="100">';
+              }
+          ?></td>
+          <td><?=$row['nama_media'];?></td>
+          
+          <td><a href="media/form_edit/<?=$row['id_media'];?>" class="btn btn-primary" onclick="return confirm('Apakah Anda yakin ingin mengedit media <?php echo $row['nama_media']; ?> ini?')">Edit</a> | <a href="media/hapus/<?=$row['id_media'];?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus media <?php echo $row['nama_media']; ?> ini?')">Hapus</a> </td>
+      </tr>
+      <?php endforeach;?>
+      </table>
+    </div>
+  </div>
+</div>
 
-        </div>
-        <!-- /.container-fluid -->
-
+</div>
+<!-- /.container-fluid -->
       </div>
       <!-- End of Main Content -->
       <!-- Logout Modal-->

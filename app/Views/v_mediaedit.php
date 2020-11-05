@@ -17,7 +17,19 @@
     <hr>
     <?=form_open_multipart(base_url('media/edit'));?>
     <div class="row">
-
+	<div class="col-lg-12">
+    		<div class="row">
+            <div class="col-md-12">
+                    <label>Gambar Koran</label><br/>
+                    <?php
+                        if (!empty($media->gambar_koran)) {
+                            echo '<img src="'.base_url("assets/img/media/$media->gambar_koran").'" width="150">';
+                        }
+                    ?>
+                    <div class="form-group">
+                         <input type="file" name="file_upload" class="form-control"> 
+                    </div>  
+                </div>
     		
     			<div class="col-md-12">
     				<label>NAMA MEDIA</label>

@@ -1,50 +1,81 @@
-<footer id="footer">
-    <div class="footer_top">
-      <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4">
-          <div class="footer_widget wow fadeInLeftBig">
-            <h2>Flickr Images</h2>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-          <div class="footer_widget wow fadeInDown">
-            <h2>Tag</h2>
-            <ul class="tag_nav">
-              <li><a href="#">Games</a></li>
-              <li><a href="#">Sports</a></li>
-              <li><a href="#">Fashion</a></li>
-              <li><a href="#">Business</a></li>
-              <li><a href="#">Life &amp; Style</a></li>
-              <li><a href="#">Technology</a></li>
-              <li><a href="#">Photo</a></li>
-              <li><a href="#">Slider</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4">
-          <div class="footer_widget wow fadeInRightBig">
-            <h2>Contact</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <address>
-            Perfect News,1238 S . 123 St.Suite 25 Town City 3333,USA Phone: 123-326-789 Fax: 123-546-567
-            </address>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer_bottom">
-      <p class="copyright">Copyright &copy; <?php echo date('Y');?><a href="index.html"> Diskominfo Kabupaten Probolinggo</a></p>
-      <p class="developer">Developed By Wpfreeware</p>
-    </div>
-  </footer>
-</div>
-<script src="assetsuser/js/jquery.min.js"></script> 
-<script src="assetsuser/js/wow.min.js"></script> 
-<script src="assetsuser/js/bootstrap.min.js"></script> 
-<script src="assetsuser/js/slick.min.js"></script> 
-<script src="assetsuser/js/jquery.li-scroller.1.0.js"></script> 
-<script src="assetsuser/js/jquery.newsTicker.min.js"></script> 
-<script src="assetsuser/js/jquery.fancybox.pack.js"></script> 
-<script src="assetsuser/js/custom.js"></script>
+<footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="widget">
+                            <div class="footer-text text-left">
+                                <a href="index.html"><img src="images/version/tech-footer-logo.png" alt="" class="img-fluid"></a>
+                                <p>Tech Blog is a technology blog, we sharing marketing, news and gadget articles.</p>
+                                <div class="social">
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>              
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                                </div>
+
+                                <hr class="invis">
+
+                                <div class="newsletter-widget text-left">
+                                    <form class="form-inline">
+                                        <input type="text" class="form-control" placeholder="Enter your email address">
+                                        <button type="submit" class="btn btn-primary">SUBMIT</button>
+                                    </form>
+                                </div><!-- end newsletter -->
+                            </div><!-- end footer-text -->
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                        <div class="widget">
+                            <h2 class="widget-title">Popular Categories</h2>
+                            <div class="link-widget">
+                                <ul>
+                                    <li><a href="#">Marketing <span>(21)</span></a></li>
+                                    <li><a href="#">SEO Service <span>(15)</span></a></li>
+                                    <li><a href="#">Digital Agency <span>(31)</span></a></li>
+                                    <li><a href="#">Make Money <span>(22)</span></a></li>
+                                    <li><a href="#">Blogging <span>(66)</span></a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+
+                    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
+                        <div class="widget">
+                            <h2 class="widget-title">Copyrights</h2>
+                            <div class="link-widget">
+                                <ul>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Advertising</a></li>
+                                    <li><a href="#">Write for us</a></li>
+                                    <li><a href="#">Trademark</a></li>
+                                    <li><a href="#">License & Help</a></li>
+                                </ul>
+                            </div><!-- end link-widget -->
+                        </div><!-- end widget -->
+                    </div><!-- end col -->
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <br>
+                        <div class="copyright">&copy; Tech Blog. Design: <a href="http://html.design">HTML Design</a>.</div>
+                    </div>
+                </div>
+            </div><!-- end container -->
+        </footer><!-- end footer -->
+
+        <div class="dmtop">Scroll to Top</div>
+        
+    </div><!-- end wrapper -->
+
+    <!-- Core JavaScript
+    ================================================== -->
+    <script src="assetsuser/js/jquery.min.js"></script>
+    <script src="assetsuser/js/tether.min.js"></script>
+    <script src="assetsuser/js/bootstrap.min.js"></script>
+    <script src="assetsuser/js/custom.js"></script>
+
 </body>
 </html>

@@ -167,8 +167,9 @@
         <thead>
           <tr>
             <th>No</th>
-            <th>Gambar Berita</th>
-            <th>Judul Berita</th>
+            <th>Icon Berita</th>
+            <th>Judul Berita</th> 
+            <th>Kategori Berita</th>
             <th>Tanggal</th>
             <th>Aksi</th>
           </tr>
@@ -182,6 +183,7 @@
               }
           ?></td>
           <td><?=$row['judul_berita'];?></td>
+          <td><?=$row['kategori'];?></td>
           <td><?=$row['tanggal'];?></td>
           
           <td><a href="berita/form_edit/<?=$row['id_berita'];?>" class="btn btn-primary" onclick="return confirm('Apakah Anda yakin ingin mengedit berita <?php echo $row['judul_berita']; ?> ini?')">Edit</a> | <a href="berita/hapus/<?=$row['id_berita'];?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus berita <?php echo $row['judul_berita']; ?> ini?')">Hapus</a> </td>

@@ -45,7 +45,7 @@ class Media extends BaseController
             $upload->move(WRITEPATH . '../public/assets/img/media/');
         $data = array(
             'nama_media'  => $this->request->getPost('nama_media'),
-            
+            'gambar_koran' => $upload->getName(),
             
         );
         }
@@ -78,14 +78,14 @@ class Media extends BaseController
         );
         } else {
         $dt = $model->PilihMedia($id)->getRow();
-        
+        $gambar_koran = $dt->gambar_koran;
         $path = '../public/assets/img/media/';
-       
+        @unlink($path.$gambar);
             $upload = $this->request->getFile('file_upload');
             $upload->move(WRITEPATH . '../public/assets/img/media/');
         $data = array(
             'nama_media'  => $this->request->getPost('nama_media'),
-           
+            'gambar_koran' => $upload->getName(),
         
             
         );
@@ -100,9 +100,9 @@ class Media extends BaseController
         $model = new MediaModel();
         $dt = $model->PilihMedia($id)->getRow();
         $model->HapusMedia($id);
-      
+        $gambar_koran = $dt->gambar_koran;
         $path = '../public/assets/img/media/';
-      
+        @unlink($path.$gambar_koran);
         return redirect()->to('./media')->with('berhasil', 'Data Berhasil di Hapus');
     }
 
