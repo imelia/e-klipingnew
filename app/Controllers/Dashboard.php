@@ -1,21 +1,38 @@
-<?php namespace App\Controllers;
+<?php 
 
-use CodeIgniter\Controller;
+namespace App\Controllers;
 
-class Dashboard extends Controller
+use App\Models\Modeldashboard;
+
+class Dashboard extends BaseController
 {
-
-    public function index()
-    {
+  
+  public function index()
+  {
         $session = session();
-        $db      = \Config\Database::connect();
-        $data['title'] = "E-Kliping | Diskominfo Kabupaten Probolinggo";
-        $data['session'] = $session;
-        $data['media'] = $db->query("SELECT * FROM media ORDER BY id_media ASC")->getResult();
-        echo view('global/header', $data);
-        echo view('global/sidebar');
-        echo view('global/topbar', $data);
-        echo view('admin/dashboard', $data);
-        echo view('global/footer');
-    }
+        // $tag = "Welcome back, ".$session->get('user_email');
+    $data = [
+      'title' => 'Tampilan Admin',
+      'username' => $session->get('user_name')
+    ];
+
+    echo view('global/header', $data);
+    echo view('global/sidebar');
+    echo view('global/topbar', $data);
+    echo view('home/index');
+    echo view('global/footer');
+  }
+  
+
+  public function dashboard()
+  {
+    $Home = $this->Modeldashboard->findAll();
+
+    $data = [
+      'judul' => 'Dashboard',
+      'home' => $Home,
+    ];
+
+    echo view('/admin/dashboard', $data);
+  }
 }

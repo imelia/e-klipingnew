@@ -31,22 +31,14 @@
                         <input type="hidden" name="id" class="form-control" value="<?= $id; ?>">
                         <div class="form-group">
                             <label for="exampleEmail1">Fullname</label>
-                            <input type="text" readonly class="form-control" name="nama" value="<?= $nama ?>">
+                            <input type="text" readonly class="form-control" name="nama" value="<?= $username ?>">
                         </div>
                         <div class="form-group">
                             <label for="exampleEmail1">Current Password</label>
                             <input type="password" readonly class="form-control" name="password" value="<?= $password ?>">
                         </div>
-                        <div class="form-group">
-                            <label for="exampleEmail1">New Password</label>
-                            <input type="password" class="form-control" name="new_password" placeholder="Fill Password">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleEmail1">Retype Password</label>
-                            <input type="password" class="form-control" name="retype_password" placeholder="Fill Retype Password">
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" name="submit" class="btn btn-info text-capitalize">Update</button>
+                        
+                        
                         </div>
                     </form>
                 </div>

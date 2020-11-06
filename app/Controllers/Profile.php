@@ -18,14 +18,14 @@ class Profile extends Controller
         {
             $data['validation'] = $this->validator;
         $session = session();
-        $model = new NewsModel();
+        
         $db = \Config\Database::connect();
         $data['title'] = "E-Kliping | Diskominfo Kabupaten Probolinggo";
         $data['session'] = $session;
-        $data['nama']  = $session->get('user_name');
+        $data['username']  = $session->get('user_name');
         $data['id'] = $session->get('user_id');
         $name = $session->get('user_email');
-        $query = $db->query("SELECT * FROM users WHERE user_email = '".$name."'");
+        $query = $db->query("SELECT * FROM login WHERE user_email = '".$name."'");
         $rows = $query->getRow();
         $data['password'] = $rows->user_password;
         echo view('global/header', $data);

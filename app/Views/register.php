@@ -1,49 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
 
-    <title>Register</title>
-  </head>
-  <body>
-    <div class="container">
-        <div class="row justify-content-md-center">
+<head>
 
-            <div class="col-6">
-                <h1>Sign Up</h1>
-                <?php if(isset($validation)):?>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Admin - Register</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="<?php echo base_url() ?>/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="<?php echo base_url() ?>/assets/css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+
+  <div class="container">
+
+    <div class="card o-hidden border-0 shadow-lg my-5">
+      <div class="card-body p-0">
+        <!-- Nested Row within Card Body -->
+        <div class="row">
+          <div class="col-lg-5 d-none d-lg-block bg-register-image"></div>
+          <div class="col-lg-7">
+            <div class="p-5">
+              <div class="text-center">
+                <h1 class="h4 text-gray-900 mb-4">Register</h1>
+              <?php if(isset($validation)):?>
                     <div class="alert alert-danger"><?= $validation->listErrors() ?></div>
                 <?php endif;?>
-                <form action="/register/save" method="post">
-                    <div class="mb-3">
-                        <label for="InputForName" class="form-label">Name</label>
-                        <input type="text" name="name" class="form-control" id="InputForName" value="<?= set_value('name') ?>">
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputForEmail" class="form-label">Email address</label>
-                        <input type="email" name="email" class="form-control" id="InputForEmail" value="<?= set_value('email') ?>">
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputForPassword" class="form-label">Password</label>
-                        <input type="password" name="password" class="form-control" id="InputForPassword">
-                    </div>
-                    <div class="mb-3">
-                        <label for="InputForConfPassword" class="form-label">Confirm Password</label>
-                        <input type="password" name="confpassword" class="form-control" id="InputForConfPassword">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Register</button>
-                </form>
+                </div>
+              <form class="user" action="/register/save" method="post">
+              <div class="form-group">
+                  <input type="text" name="name" class="form-control form-control-user" id="InputForName" placeholder="Masukkan Nama Anda" value="<?= set_value('name') ?>">
+                </div>
+                <div class="form-group">
+                  <input type="email" name="email" class="form-control form-control-user" id="InputForEmail" placeholder="Masukkan Alamat Email" value="<?= set_value('email') ?>">
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-6 mb-3 mb-sm-0">
+                    <input type="password" name="password" class="form-control form-control-user" id="InputForPassword" placeholder="Masukkan Password">
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="password" name="confpassword" class="form-control form-control-user" id="InputForConfPassword" placeholder="Konfirmasi Password">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-user btn-block">Register</button>
+                  
+              </form>
+              <hr>
+              <div class="text-center">
+                <a class="small" href="forgot-password.html">Lupa Password?</a>
+              </div>
+              <div class="text-center">
+                <a class="small" href="/login">Sudah memiliki akun? Login!</a>
+              </div>
             </div>
-            
+          </div>
         </div>
+      </div>
     </div>
-    
-    <!-- Popper.js first, then Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-  </body>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="<?php echo base_url() ?>/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="<?php echo base_url() ?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="<?php echo base_url() ?>/assets/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="<?php echo base_url() ?>/assets/js/sb-admin-2.min.js"></script>
+
+</body>
+
 </html>

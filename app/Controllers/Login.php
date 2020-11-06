@@ -1,20 +1,16 @@
 <?php namespace App\Controllers;
-
-use App\Models\UserModel;
+ 
 use CodeIgniter\Controller;
-
+use App\Models\UserModel;
+ 
 class Login extends Controller
 {
     public function index()
     {
         helper(['form']);
-        $data['title'] = "E-Kliping | Diskominfo Kabupaten Probolinggo";
-        echo view('global/header', $data);
-        echo view('global/templates/auth_header');
-        echo view('login', $data);
-        echo view('global/templates/auth_footer');
-    }
-
+        echo view('login');
+    } 
+ 
     public function auth()
     {
         $session = session();
@@ -22,32 +18,33 @@ class Login extends Controller
         $email = $this->request->getVar('email');
         $password = $this->request->getVar('password');
         $data = $model->where('user_email', $email)->first();
-        if ($data) {
+        if($data){
             $pass = $data['user_password'];
-
-            if ($password == $pass) {
+            $verify_pass = password_verify($password, $pass);
+            if($verify_pass){
                 $ses_data = [
-                    'user_id' => $data['user_id'],
-                    'user_name' => $data['user_name'],
-                    'user_email' => $data['user_email'],
-                    'logged_in' => true,
+                    'user_id'       => $data['user_id'],
+                    'user_name'     => $data['user_name'],
+                    'user_email'    => $data['user_email'],
+                    'logged_in'     => TRUE
                 ];
                 $session->set($ses_data);
+                $session->setFlashdata('msg', 'Selamat Anda Berhasil Login');
                 return redirect()->to('/dashboard');
-            } else {
-                $session->setFlashdata('msg', 'Wrong Password');
+            }else{
+                $session->setFlashdata('msg', 'Password Salah');
                 return redirect()->to('/login');
             }
-        } else {
-            $session->setFlashdata('msg', 'Email not Found');
+        }else{
+            $session->setFlashdata('msg', 'Email Tidak Ditemukan');
             return redirect()->to('/login');
         }
     }
-
+ 
     public function logout()
     {
         $session = session();
         $session->destroy();
         return redirect()->to('/login');
     }
-}
+} 
