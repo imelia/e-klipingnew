@@ -54,11 +54,11 @@
     <span>Berita</span></a>
 </li>
 
-<li class="nav-item">
+<!-- <li class="nav-item">
   <a class="nav-link" href="<?= base_url('users');?>">
     <i class="fas fa-fw fa-users"></i>
     <span>Users</span></a>
-</li>
+</li> -->
 
 <!-- Nav Item - Tables -->
 <li class="nav-item">
@@ -170,6 +170,7 @@
             <th>Icon Berita</th>
             <th>Judul Berita</th> 
             <th>Kategori Berita</th>
+            <th>Media Berita</th>
             <th>Tanggal</th>
             <th>Aksi</th>
           </tr>
@@ -184,6 +185,7 @@
           ?></td>
           <td><?=$row['judul_berita'];?></td>
           <td><?=$row['kategori'];?></td>
+          <td><?=$row['media'];?></td>
           <td><?=$row['tanggal'];?></td>
           
           <td><a href="berita/form_edit/<?=$row['id_berita'];?>" class="btn btn-primary" onclick="return confirm('Apakah Anda yakin ingin mengedit berita <?php echo $row['judul_berita']; ?> ini?')">Edit</a> | <a href="berita/hapus/<?=$row['id_berita'];?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus berita <?php echo $row['judul_berita']; ?> ini?')">Hapus</a> </td>

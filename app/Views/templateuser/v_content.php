@@ -58,7 +58,7 @@
                     <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
                         <div class="page-wrapper">
                             <div class="blog-top clearfix">
-                                <h4 class="pull-left">Recent News <a href="#"><i class="fa fa-rss"></i></a></h4>
+                                <h4 class="pull-left">News<a href="#"><i class="fa fa-rss"></i></a></h4>
                             </div><!-- end blog-top -->
 
                             <?php foreach ($home as $h) : ?>
@@ -67,7 +67,7 @@
                                     <div class="col-md-4">
                                         <div class="post-media">
                                             <a href="tech-single.html" title="">
-                                                <img src="<?php echo base_url() ?>/assets/img/berita/<?= $h['gambar_berita']; ?>" alt="" class="img-fluid">
+                                                <img src="<?php echo base_url() ?>/assets/img/berita/<?= $h['gambar_berita']; ?>" width="100%" height="50%" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
                                         </div><!-- end media -->
@@ -78,7 +78,7 @@
                                         <p></p>
                                         <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title=""><?= $h['kategori']; ?></a></small>
                                         <small><a href="tech-single.html" title=""><?= $h['tanggal']; ?></a></small>
-                                        <small><a href="tech-author.html" title=""></a></small>
+                                        <small><a href="tech-author.html" title=""><?= $h['media']; ?></a></small>
                                         <small><a href="tech-single.html" title=""><i class=""></i></a></small>
                                     </div><!-- end meta -->
                                 </div><!-- end blog-box --> 
@@ -282,36 +282,36 @@
                                         <!-- end media -->
                                     </div><!-- end col -->
 
-                                    <div class="blog-meta big-meta col-md-8">
+                                   <!-- <div class="blog-meta big-meta col-md-8">
                                         <h4><a href="tech-single.html" title="">Enjoy a summer with a colorful headset</a></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
                                         <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title="">Technology</a></small>
                                         <small><a href="tech-single.html" title="">14 July, 2017</a></small>
                                         <small><a href="tech-author.html" title="">by Matilda</a></small>
                                         <small><a href="tech-single.html" title=""><i class="fa fa-eye"></i> 2214</a></small>
-                                    </div><!-- end meta -->
+                                    </div> --> <!-- end meta -->
                                 </div><!-- end blog-box -->
 
                                 <hr class="invis">
 
-                                <div class="blog-box row">
+                               
                                     <div class="col-md-4">
                                         <div class="post-media">
                                             <a href="tech-single.html" title="">
-                                                <img src="assetsuser/upload/tech_blog_10.jpg" alt="" class="img-fluid">
+                                                
                                                 <div class="hovereffect"></div>
                                             </a>
                                         </div><!-- end media -->
                                     </div><!-- end col -->
 
-                                    <div class="blog-meta big-meta col-md-8">
+                                 <!--   <div class="blog-meta big-meta col-md-8">
                                         <h4><a href="tech-single.html" title="">Google has developed a brand new algorithm. Forget all your knowledge!</a></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
                                         <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title="">Gadgets</a></small>
                                         <small><a href="tech-single.html" title="">13 July, 2017</a></small>
                                         <small><a href="tech-author.html" title="">by Matilda</a></small>
                                         <small><a href="tech-single.html" title=""><i class="fa fa-eye"></i> 3331</a></small>
-                                    </div><!-- end meta -->
+                                    </div> --><!-- end meta -->
                                 </div><!-- end blog-box -->
                             </div><!-- end blog-list -->
                         </div><!-- end page-wrapper -->
@@ -339,12 +339,12 @@
                             <div class="widget">
                                 <div class="banner-spot clearfix">
                                     <div class="banner-img">
-                                        <img src="assetsuser/upload/banner_07.jpg" alt="" class="img-fluid">
+                                       
                                     </div><!-- end banner-img -->
                                 </div><!-- end banner -->
                             </div><!-- end widget -->
 
-                            <div class="widget">
+                           <!-- <div class="widget">
                                 <h2 class="widget-title">Trend Videos</h2>
                                 <div class="trend-videos">
                                     <div class="blog-box">
@@ -353,49 +353,49 @@
                                                 <img src="assetsuser/upload/tech_video_01.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect">
                                                     <span class="videohover"></span>
-                                                </div><!-- end hover -->
+                                                </div> --><!-- end hover -->
                                             </a>
-                                        </div><!-- end media -->
-                                        <div class="blog-meta">
+                                      </div><!-- end media -->
+                                        <!--<div class="blog-meta">
                                             <h4><a href="tech-single.html" title="">We prepared the best 10 laptop presentations for you</a></h4>
-                                        </div><!-- end meta -->
+                                        </div> --><!-- end meta -->
                                     </div><!-- end blog-box -->
 
                                     <hr class="invis">
 
-                                    <div class="blog-box">
+                                  <!--  <div class="blog-box">
                                         <div class="post-media">
                                             <a href="tech-single.html" title="">
                                                 <img src="assetsuser/upload/tech_video_02.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect">
                                                     <span class="videohover"></span>
-                                                </div><!-- end hover -->
+                                                </div> --><!-- end hover -->
                                             </a>
                                         </div><!-- end media -->
-                                        <div class="blog-meta">
+                                      <!--  <div class="blog-meta">
                                             <h4><a href="tech-single.html" title="">We are guests of ABC Design Studio - Vlog</a></h4>
-                                        </div><!-- end meta -->
+                                        </div> --><!-- end meta -->
                                     </div><!-- end blog-box -->
 
                                     <hr class="invis">
 
-                                    <div class="blog-box">
+                                   <!-- <div class="blog-box">
                                         <div class="post-media">
                                             <a href="tech-single.html" title="">
                                                 <img src="assetsuser/upload/tech_video_03.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect">
                                                     <span class="videohover"></span>
-                                                </div><!-- end hover -->
-                                            </a>
-                                        </div><!-- end media -->
-                                        <div class="blog-meta">
+                                                </div> --><!-- end hover -->
+                                           <!-- </a>
+                                        </div> --><!-- end media -->
+                                     <!--   <div class="blog-meta">
                                             <h4><a href="tech-single.html" title="">Both blood pressure monitor and intelligent clock</a></h4>
-                                        </div><!-- end meta -->
-                                    </div><!-- end blog-box -->
-                                </div><!-- end videos -->
+                                        </div> --><!-- end meta -->
+                           <!--         </div> --><!-- end blog-box -->
+                               <!-- </div> --><!-- end videos -->
                             </div><!-- end widget -->
 
-                            <div class="widget">
+                           <!-- <div class="widget">
                                 <h2 class="widget-title">Popular Posts</h2>
                                 <div class="blog-list-widget">
                                     <div class="list-group">
@@ -423,10 +423,10 @@
                                             </div>
                                         </a>
                                     </div>
-                                </div><!-- end blog-list -->
-                            </div><!-- end widget -->
+                                </div> --><!-- end blog-list -->
+                          <!--  </div> --><!-- end widget -->
 
-                            <div class="widget">
+                          <!--  <div class="widget">
                                 <h2 class="widget-title">Recent Reviews</h2>
                                 <div class="blog-list-widget">
                                     <div class="list-group">
@@ -472,48 +472,18 @@
                                             </div>
                                         </a>
                                     </div>
-                                </div><!-- end blog-list -->
+                                </div> --><!-- end blog-list -->
                             </div><!-- end widget -->
 
-                            <div class="widget">
-                                <h2 class="widget-title">Follow Us</h2>
+                            
 
-                                <div class="row text-center">
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                                        <a href="#" class="social-button facebook-button">
-                                            <i class="fa fa-facebook"></i>
-                                            <p>27k</p>
-                                        </a>
-                                    </div>
+                               
 
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                                        <a href="#" class="social-button twitter-button">
-                                            <i class="fa fa-twitter"></i>
-                                            <p>98k</p>
-                                        </a>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                                        <a href="#" class="social-button google-button">
-                                            <i class="fa fa-google-plus"></i>
-                                            <p>17k</p>
-                                        </a>
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                                        <a href="#" class="social-button youtube-button">
-                                            <i class="fa fa-youtube"></i>
-                                            <p>22k</p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div><!-- end widget -->
-
-                            <div class="widget">
+                         <!--   <div class="widget">
                                 <div class="banner-spot clearfix">
                                     <div class="banner-img">
                                         <img src="assetsuser/upload/banner_03.jpg" alt="" class="img-fluid">
-                                    </div><!-- end banner-img -->
+                                    </div> --><!-- end banner-img -->
                                 </div><!-- end banner -->
                             </div><!-- end widget -->
                         </div><!-- end sidebar -->

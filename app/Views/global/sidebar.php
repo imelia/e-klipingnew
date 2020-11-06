@@ -27,11 +27,11 @@
     <span>Berita</span></a>
 </li>
 
-<li class="nav-item">
+<!-- <li class="nav-item">
   <a class="nav-link" href="<?= base_url('users');?>">
     <i class="fas fa-fw fa-users"></i>
     <span>Users</span></a>
-</li>
+</li> -->
 
 <!-- Nav Item - Tables -->
 <li class="nav-item">

@@ -5,22 +5,23 @@
                         <div class="widget">
                             <div class="footer-text text-left">
                                 <a href="index.html"><img src="images/version/tech-footer-logo.png" alt="" class="img-fluid"></a>
-                                <p>Dinas Komunikasi, Informatika Dan Persandian</p>
+                                <h3 class="widget-title">Dinas Komunikasi, Informatika Dan Persandian</h3>
+                                <p>
+                                 JL. PANGLIMA SUDIRMAN No. 134 KOTA KRAKSAAN, KABUPATEN PROBOLINGGO <br>
+                            
+                                <strong>Phone:</strong> +62335 846665<br>
+                                <strong>Email:</strong> redaksi@probolinggokab.go.id<br>
+                                </p>
                                 <div class="social">
-                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>              
-                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
-                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i class="fa fa-instagram"></i></a>
-                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i class="fa fa-google-plus"></i></a>
-                                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                                    <a href="https://www.facebook.com/infoprobolinggokab" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i class="fa fa-facebook"></i></a>              
+                                    <a href="https://twitter.com/Infokabprob" data-toggle="tooltip" data-placement="bottom" title="Twitter"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCl1Skf0XEOJG0Ll_DBqRvMA" data-toggle="tooltip" data-placement="bottom" title="Youtube"><i class="fa fa-youtube"></i></a>
                                 </div>
 
                                 <hr class="invis">
 
                                 <div class="newsletter-widget text-left">
-                                    <form class="form-inline">
-                                        <input type="text" class="form-control" placeholder="Enter your email address">
-                                        <button type="submit" class="btn btn-primary">SUBMIT</button>
-                                    </form>
+                                   
                                 </div><!-- end newsletter -->
                             </div><!-- end footer-text -->
                         </div><!-- end widget -->
@@ -28,31 +29,13 @@
 
                     <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
                         <div class="widget">
-                            <h2 class="widget-title">Categories</h2>
-                            <div class="link-widget">
-                                <ul>
-                                    <li><a href="#"> <span></span></a></li>
-                                    <li><a href="#"> <span></span></a></li>
-                                    <li><a href="#"> <span></span></a></li>
-                                    <li><a href="#"><span></span></a></li>
-                                    <li><a href="#"> <span></span></a></li>
-                                </ul>
-                            </div><!-- end link-widget -->
+                           
                         </div><!-- end widget -->
                     </div><!-- end col -->
 
                     <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12">
                         <div class="widget">
-                            <h2 class="widget-title"></h2>
-                            <div class="link-widget">
-                                <ul>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                    <li><a href="#"></a></li>
-                                </ul>
-                            </div><!-- end link-widget -->
+                           
                         </div><!-- end widget -->
                     </div><!-- end col -->
                 </div>

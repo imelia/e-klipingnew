@@ -36,7 +36,13 @@
     				<div class="form-group">
                    		 <input type="text" name="kategori" class="form-control"> 
                 	</div>	
-    			</div>
+				</div>
+				<div class="col-md-12">
+    				<label>MEDIA BERITA</label>
+    				<div class="form-group">
+                   		 <input type="text" name="media" class="form-control"> 
+                	</div>	
+				</div>
 				<div class="col-md-12">
     				<label>TANGGAL</label>
     				<div class="form-group">

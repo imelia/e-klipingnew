@@ -381,15 +381,7 @@
                             </li>
                         </ul>
                         <ul class="navbar-nav mr-2">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-rss"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-android"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-apple"></i></a>
-                            </li>
+                        <h3 class="widget-title">E-Kliping</h3>
                         </ul>
                     </div>
                 </nav>

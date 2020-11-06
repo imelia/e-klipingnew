@@ -36,6 +36,7 @@ class Berita extends BaseController
         $data = array(
             'judul_berita'  => $this->request->getPost('judul_berita'),
             'kategori'  => $this->request->getPost('kategori'),
+            'media'  => $this->request->getPost('media'),
             'tanggal'  => $this->request->getPost('tanggal'),
         );
         } else {
@@ -44,6 +45,7 @@ class Berita extends BaseController
         $data = array(
             'judul_berita'  => $this->request->getPost('judul_berita'),
             'kategori'  => $this->request->getPost('kategori'),
+            'media'  => $this->request->getPost('media'),
             'tanggal'  => $this->request->getPost('tanggal'),
             'gambar_berita' => $upload->getName(),
         );
@@ -73,6 +75,7 @@ class Berita extends BaseController
         $data = array(
             'judul_berita'  => $this->request->getPost('judul_berita'),
             'kategori'  => $this->request->getPost('kategori'),
+            'media'  => $this->request->getPost('media'),
             'tanggal'  => $this->request->getPost('tanggal'),
            
         );
@@ -86,6 +89,7 @@ class Berita extends BaseController
         $data = array(
             'judul_berita'  => $this->request->getPost('judul_berita'),
             'kategori'  => $this->request->getPost('kategori'),
+            'media'  => $this->request->getPost('media'),
             'tanggal'  => $this->request->getPost('tanggal'),
             'gambar_berita' => $upload->getName(),
             

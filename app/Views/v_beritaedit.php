@@ -35,12 +35,20 @@
     				<div class="form-group">
                         <input type="hidden" name="id_berita" class="form-control" value="<?=$berita->id_berita?>">
                             <input type="text" name="judul_berita" class="form-control" value="<?=$berita->judul_berita?>"> 
-
+                    </div>	
+    			</div>
+                <div class="col-md-12">
                     <label>KATEGORI BERITA</label>
     				<div class="form-group">
                         <input type="hidden" name="id" class="form-control" value="<?=$berita->kategori?>">
                             <input type="text" name="kategori" class="form-control" value="<?=$berita->kategori?>"> 
-                           
+                	</div>	
+                </div>
+                <div class="col-md-12">
+                    <label>MEDIA BERITA</label>
+    				<div class="form-group">
+                        <input type="hidden" name="id" class="form-control" value="<?=$berita->media?>">
+                            <input type="text" name="media" class="form-control" value="<?=$berita->media?>"> 
                 	</div>	
     			</div>
                 <div class="col-md-12">
