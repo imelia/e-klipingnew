@@ -119,3 +119,38 @@ CRITICAL - 2020-11-06 07:59:39 --> Undefined variable: users_name
 #7 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
 #8 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
 #9 {main}
+CRITICAL - 2020-11-06 23:23:07 --> Class 'App\Controllers\ModelUser' not found
+#0 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(890): App\Controllers\User->__Construct()
+#1 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(399): CodeIgniter\CodeIgniter->createController()
+#2 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2020-11-06 23:39:37 --> Undefined variable: h
+#0 C:\xampp\htdocs\e-klipingnew\app\Views\templatenew\v_content.php(116): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 116, Array)
+#1 C:\xampp\htdocs\e-klipingnew\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('templatenew/v_c...', Array, true)
+#3 C:\xampp\htdocs\e-klipingnew\app\Views\templatenew\v_wrapper.php(4): view('templatenew/v_c...')
+#4 C:\xampp\htdocs\e-klipingnew\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('templatenew/v_w...', Array, true)
+#6 C:\xampp\htdocs\e-klipingnew\app\Controllers\User.php(26): view('templatenew/v_w...', Array)
+#7 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\User->index()
+#8 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2020-11-06 23:47:23 --> Undefined variable: user
+#0 C:\xampp\htdocs\e-klipingnew\app\Views\templatenew\v_content.php(112): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 112, Array)
+#1 C:\xampp\htdocs\e-klipingnew\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('templatenew/v_c...', Array, true)
+#3 C:\xampp\htdocs\e-klipingnew\app\Views\templatenew\v_wrapper.php(4): view('templatenew/v_c...')
+#4 C:\xampp\htdocs\e-klipingnew\system\View\View.php(246): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\e-klipingnew\system\Common.php(1119): CodeIgniter\View\View->render('templatenew/v_w...', Array, true)
+#6 C:\xampp\htdocs\e-klipingnew\app\Controllers\User.php(26): view('templatenew/v_w...', Array)
+#7 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(918): App\Controllers\User->index()
+#8 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(404): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#9 C:\xampp\htdocs\e-klipingnew\system\CodeIgniter.php(312): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\e-klipingnew\public\index.php(45): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\e-klipingnew\system\Commands\Server\rewrite.php(34): require_once('C:\\xampp\\htdocs...')
+#12 {main}
