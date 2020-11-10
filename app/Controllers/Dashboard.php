@@ -26,7 +26,7 @@ class Dashboard extends BaseController
 
   public function dashboard()
   {
-    $Home = $this->Modeldashboard->findAll();
+    // $Home = $this->Modeldashboard->findAll();
 
     $data = [
       'judul' => 'Dashboard',
