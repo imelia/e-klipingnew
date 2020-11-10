@@ -19,7 +19,7 @@ class Dashboard extends BaseController
     echo view('global/header', $data);
     echo view('global/sidebar');
     echo view('global/topbar', $data);
-    echo view('home/index');
+    echo view('admin/dashboard');
     echo view('global/footer');
   }
   
