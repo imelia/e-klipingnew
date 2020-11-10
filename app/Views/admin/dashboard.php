@@ -5,7 +5,7 @@
                 <div class="card-body">
                     <h4 class="card-title">Informasi</h4>
                     <p class="text-justify">
-                        Selamat Datang di Website Admin Panel eKliping
+                        Selamat Datang di E-Kliping Diskominfo Kabupaten Probolinggo
                     </p>
                 </div>
             </div>
