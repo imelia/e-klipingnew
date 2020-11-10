@@ -29,7 +29,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <!-- Sidebar - Brand -->
-<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+<a class="sidebar-brand d-flex align-items-center justify-content-center" href="">
   <div class="sidebar-brand-text mx-3">E-KLIPING</div>
 </a>
 
@@ -42,7 +42,7 @@
 </div>
 
 <li class="nav-item">
-  <a class="nav-link" href="<?= base_url();?>">
+  <a class="nav-link" href="<?= base_url('dashboard');?>">
     <i class="fas fa-fw fa-home"></i>
     <span>Dashboard</span></a>
 </li>
@@ -54,11 +54,11 @@
     <span>Berita</span></a>
 </li>
 
-<!-- <li class="nav-item">
+ <li class="nav-item">
   <a class="nav-link" href="<?= base_url('users');?>">
     <i class="fas fa-fw fa-users"></i>
     <span>Users</span></a>
-</li> -->
+</li> 
 
 <!-- Nav Item - Tables -->
 <li class="nav-item">
