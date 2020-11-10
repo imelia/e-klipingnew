@@ -49,7 +49,7 @@
                       <input type="password" name="password" class="form-control form-control-user" id="InputForPassword" placeholder="Masukkan Password">
                     </div>
                     <button class="btn btn-primary btn-user btn-block" >Login</button>
-                    <a href="/home" class="btn btn-primary btn-user btn-block" >Go to E-Kliping</a>
+                    <a href="/user" class="btn btn-primary btn-user btn-block" >Go to E-Kliping</a>
                   </form>
                   <hr>
                  
