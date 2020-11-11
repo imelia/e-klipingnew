@@ -27,4 +27,19 @@ class User extends BaseController
     
     }  
 
+    public function search(){
+        $keyword = $this->request->getPost('keyword');
+        $User = $this->ModelUser->like("judul_berita",$keyword,"both")->find();
+  
+        // die(var_dump($User));
+  
+        $data = [
+            'judul' => 'Tampilan User',
+            'user' => $User
+        ];
+  
+        echo view('templatenew/v_wrapper', $data);
+      }
+  
+
 }

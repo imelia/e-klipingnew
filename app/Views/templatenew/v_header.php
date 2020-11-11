@@ -154,7 +154,7 @@
 								<li>
 									<div class="row_1">
 										<div class="col-sm-12">
-											<form class="navbar-form navbar-left" role="search">
+											<form class="navbar-form navbar-left" action="<?php echo base_url()?>/user/search" method="POST" role="search">
 											<div class="input-group">
 												<input type="text" class="form-control" placeholder="Search">
 												<span class="input-group-btn">
