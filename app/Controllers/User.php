@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-namespace App\Controllers; 
+namespace App\Controllers;
 
 use App\Models\ModelUser;
 
@@ -19,27 +19,25 @@ class User extends BaseController
         $User = $this->ModelUser->findAll();
 
         $data = [
-            'judul' => 'Tampilan User', 
-            'user' => $User
-        ];
-
-        echo view('templatenew/v_wrapper', $data);
-    
-    }  
-
-    public function search(){
-        $keyword = $this->request->getPost('keyword');
-        $User = $this->ModelUser->like("judul_berita",$keyword,"both")->find();
-  
-        // die(var_dump($User));
-  
-        $data = [
             'judul' => 'Tampilan User',
             'user' => $User
         ];
-  
+
         echo view('templatenew/v_wrapper', $data);
-      }
-  
+
+    }
+    public function search(){
+      $keyword = $this->request->getPost('keyword');
+      $User = $this->ModelUser->like("judul_berita", $keyword,"both")->find();
+
+      // die(var_dump($User));
+
+      $data = [
+          'judul' => 'Tampilan User',
+          'user' => $User
+      ];
+
+      echo view('templatenew/v_wrapper', $data);
+    }
 
 }
