@@ -1,8 +1,8 @@
 <?php namespace App\Controllers;
- 
+
 use CodeIgniter\Controller;
 use App\Models\BeritaModel;
- 
+
 class Berita extends BaseController
 {
     public function index()
@@ -14,7 +14,7 @@ class Berita extends BaseController
             $data['validation'] = $this->validator;
             $data['berita'] = $model->getBerita();
             return view('v_beritalist2',$data);
-            
+
         }
     }
 
@@ -24,6 +24,7 @@ class Berita extends BaseController
     }
 
     public function simpan(){
+        $session = session();
         $model = new BeritaModel();
         if ($this->request->getMethod() !== 'post') {
             return redirect()->to('berita');
@@ -31,14 +32,15 @@ class Berita extends BaseController
         $validation = $this->validate([
             'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,image/jpg,image/jpeg,image/gif,image/png]|max_size[file_upload,4096]'
         ]);
- 
+
         if ($validation == FALSE) {
-        $data = array(
-            'judul_berita'  => $this->request->getPost('judul_berita'),
-            'kategori'  => $this->request->getPost('kategori'),
-            'media'  => $this->request->getPost('media'),
-            'tanggal'  => $this->request->getPost('tanggal'),
-        );
+          $data = array(
+              'judul_berita'  => $this->request->getPost('judul_berita'),
+              'kategori'  => $this->request->getPost('kategori'),
+              'media'  => $this->request->getPost('media'),
+              'tanggal'  => $this->request->getPost('tanggal'),
+          );
+          return redirect()->to('./berita/form')->with('notif', 'Type FIle Tidak Didukung (Upload Hanya Gambar)');
         } else {
             $upload = $this->request->getFile('file_upload');
             $upload->move(WRITEPATH . '../public/assets/img/berita/');
@@ -70,14 +72,14 @@ class Berita extends BaseController
         $validation = $this->validate([
             'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,image/jpg,image/jpeg,image/gif,image/png]|max_size[file_upload,4096]'
         ]);
- 
+
         if ($validation == FALSE) {
         $data = array(
             'judul_berita'  => $this->request->getPost('judul_berita'),
             'kategori'  => $this->request->getPost('kategori'),
             'media'  => $this->request->getPost('media'),
             'tanggal'  => $this->request->getPost('tanggal'),
-           
+
         );
         } else {
         $dt = $model->PilihBerita($id)->getRow();
@@ -92,13 +94,13 @@ class Berita extends BaseController
             'media'  => $this->request->getPost('media'),
             'tanggal'  => $this->request->getPost('tanggal'),
             'gambar_berita' => $upload->getName(),
-            
+
         );
         }
-        
+
         $model->edit_data($id,$data);
         return redirect()->to('./berita')->with('berhasil', 'Data Berhasil di Ubah');
-        
+
     }
 
     public function hapus($id){

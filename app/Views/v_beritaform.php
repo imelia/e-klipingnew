@@ -19,42 +19,47 @@
     <div class="row">
     	<div class="col-lg-12">
     		<div class="row">
+					<?php if(!empty(session()->getFlashdata('notif'))){ ?>
+						<div class="alert alert-danger">
+				          <?php echo session()->getFlashdata('notif');?>
+				      </div>
+				  <?php } ?>
             <div class="col-md-12">
                     <label>Icon Berita</label>
                     <div class="form-group">
-                         <input type="file" name="file_upload" class="form-control is-invalid"> 
-                    </div>  
+                         <input type="file" accept="image/*" name="file_upload" class="form-control is-invalid">
+                    </div>
                 </div>
     			<div class="col-md-12">
     				<label>JUDUL BERITA</label>
     				<div class="form-group">
-                   		 <input type="text" name="judul_berita" class="form-control"> 
-                	</div>	
+                   		 <input type="text" name="judul_berita" class="form-control">
+                	</div>
 				</div>
 				<div class="col-md-12">
     				<label>KATEGORI BERITA</label>
     				<div class="form-group">
-                   		 <input type="text" name="kategori" class="form-control"> 
-                	</div>	
+                   		 <input type="text" name="kategori" class="form-control">
+                	</div>
 				</div>
 				<div class="col-md-12">
     				<label>MEDIA BERITA</label>
     				<div class="form-group">
-                   		 <input type="text" name="media" class="form-control"> 
-                	</div>	
+                   		 <input type="text" name="media" class="form-control">
+                	</div>
 				</div>
 				<div class="col-md-12">
     				<label>TANGGAL</label>
     				<div class="form-group">
-							<input type="date" name="tanggal" class="form-control"> 
-                	</div>	
+							<input type="date" name="tanggal" class="form-control">
+                	</div>
 				</div>
 
     			<div class="col-md-12">
     				<div class="form-group">
 							 <button class="btn btn-primary" onclick="return confirm('Apakah Anda yakin ?')">Simpan</button>
 							 <a href="/berita/" class="btn btn-warning float-right mb-3" onclick="return confirm('Apakah Anda yakin ingin kembali ?')"><span class="fa fa-plus" ></span> Batal </a>
-                	</div>	
+                	</div>
     			</div>
     		</div>
     	</div>
