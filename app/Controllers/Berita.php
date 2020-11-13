@@ -30,7 +30,7 @@ class Berita extends BaseController
             return redirect()->to('berita');
         }
         $validation = $this->validate([
-            'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,application/pdf]|max_size[file_upload,1024]'
+            'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,application/pdf]|max_size[file_upload,5120]'
         ]);
 
         if ($validation == FALSE) {
@@ -70,7 +70,7 @@ class Berita extends BaseController
         }
         $id = $this->request->getPost('id_berita');
         $validation = $this->validate([
-            'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,image/jpg,image/jpeg,image/gif,image/png]|max_size[file_upload,4096]'
+            'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,application/pdf]|max_size[file_upload,5120]'
         ]);
 
         if ($validation == FALSE) {
