@@ -46,12 +46,12 @@ padding-right:0;
 padding:0; 
 } 
 .active_tag{
-   background:#E90E0E!important;
+   background:#0e74e9!important;
    color:#fff!important;
   }
 /*********************header****************/
 #header .navbar-brand{
-   background:#E90E0E;
+   background: #0e74e9;
    color:#fff;
    font-size:50px;
    font-weight:bold;
@@ -104,7 +104,7 @@ letter-spacing:1px;
   }
 #header ul li .drop_1 li a:hover{
 background:none;
-color:#E90E0E;
+color: #0e74e9;
   }
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus {
    background:none;
@@ -127,7 +127,7 @@ margin-right:10px;
   margin-top:10px; 
   }
 #header .nav_1  .tag_3 a {
- background:#CD1D1F;
+ background:#0e74e9;
  border-radius:100%;
  padding:0;
  padding:5px 8px 5px 8px;
@@ -197,10 +197,10 @@ padding-top:2px;
 .mega-dropdown-menu > li ul > li > a:focus {
   text-decoration: none;
   color: #fff;
-  background-color: #E90E0E;
+  background-color: #0e74e9;
 }
 .mega-dropdown-menu .dropdown-header {
-  color: #E90E0E;
+  color: #0e74e9;
   font-size: 20px;
   font-weight:bold;
 }
@@ -218,8 +218,8 @@ letter-spacing:1px;
 margin-bottom:0;
  }
 .mega-dropdown-menu .btn-primary{
- background:#E90E0E;
- border-color:#E90E0E;
+ background:#0e74e9;
+ border-color:#0e74e9;
  }
 .mega-dropdown-menu .btn{
 margin-top:10px;
@@ -233,13 +233,13 @@ letter-spacing:1px;
 font-size:16px;
  }
 .drop_2 .btn{
- background:#E90E0E;
- border-color:#E90E0E;
+ background:#0e74e9;
+ border-color:#0e74e9;
  }
  
 .drop_3 .btn-primary{
- background:#E90E0E;
- border-color:#E90E0E;
+ background:#0e74e9;
+ border-color:#0e74e9;
  }
 .drop_3{
  margin-top:14px!important;
@@ -296,7 +296,7 @@ text-decoration:underline;
   }
 .center_para{
  background:#2c2c2c;
- border-top:8px solid #E90E0E;
+ border-top:8px solid #0e74e9;
  padding:30px; 
   }
 .center_para h3{
@@ -358,7 +358,7 @@ margin-top:10px;
 margin-bottom:0;
   }
 .middle_inner h4 a{
-   color: #E90E0E;
+   color: #0e74e9;
   }
 .middle_inner h4 a i{
   margin-right:5px;
@@ -482,7 +482,7 @@ border-bottom: 2px solid #F1F1F1;
 .news_blog_left_inner_main_1{
   background: #2c2c2c;
   padding:30px;
-  border-top: 8px solid #E90E0E;
+  border-top: 8px solid #0e74e9;
   }
 .news_blog_left_inner_main_1 h3{
 font-size:28px;
@@ -516,14 +516,14 @@ letter-spacing:1px;
   }
 
 .news_blog_left_inner_main_2 p a{
-  background:#E90E0E;
+  background:#0e74e9;
   padding:6px 10px 6px 10px;
   color:#fff;
   font-size:12px;
   letter-spacing:2px;
   }
 .news_blog_left_inner_main_2 p a:hover{
-background:#ce0e0e;
+background:#0e74e9;
   }
 .news_blog_left_inner_main{
   position:relative;
@@ -546,14 +546,14 @@ background:#ce0e0e;
   }
 
 .news_detail_left h6 a{
-  background:#E90E0E;
+  background:#0e74e9;
   padding:6px 10px 6px 10px;
   color:#fff;
   font-size:12px;
   letter-spacing:2px;
   }
 .news_detail_left h6 a:hover{
-background:#ce0e0e;
+background:#0e74e9;
   }
   
 .news_detail_left h3{
@@ -609,7 +609,7 @@ line-height:1.6em;
  color: #979797;
   }
 .testimonial_inner h6 a{
-  background:#E90E0E;
+  background:#0e74e9;
   padding:6px 10px 6px 10px;
   color:#fff;
   font-size:12px;
@@ -661,7 +661,7 @@ margin-right:5px;
 color:#000; 
   }
 #center_last .news_blog_left_inner_main_1 h4 a{
- color:#E90E0E;
+ color:#0e74e9;
   }
 #center_last .news_blog_left_inner_main_1 p a{
  color:#626262;
@@ -675,7 +675,7 @@ color:#000;
   color:#000;
   }
 .center_last_left h2 a i{
-  color:#E90E0E;
+  color:#0e74e9;
   font-size:22px;
   vertical-align:middle;
   }
@@ -705,7 +705,7 @@ color:#000;
   font-size:14px;
   }
 .center_last_right_2 h4 a{
-    color: #E90E0E;
+    color: #0e74e9;
   }
 .center_last_right_2 h4 a i{
    margin-right:5px;
@@ -771,7 +771,7 @@ color:#000;
    color:#fff; 
   }
 .footer_middle  p .tag_3  {
- background:#CD1D1F;
+ background:#0e74e9;
  border-radius:100%;
  padding:0;
  padding:7px 12px 7px 12px;
@@ -807,7 +807,7 @@ color:#000;
 .footer_b_1 p{
  color: #e7cece;
     font-size: 14px;
-    background: #E90E0E;
+    background: #0e74e9;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 10px;
@@ -829,7 +829,7 @@ color:#000;
    }
 .center_detail_1 p a i{
 margin-left:5px;
-color:#E90E0E;
+color:#0e74e9;
    }
 
 .center_detail_1 .tag_2{
@@ -842,14 +842,14 @@ color:#E90E0E;
    text-decoration:underline;
    }
 .center_detail_1 p .tag_1{
-  background:#E90E0E;
+  background:#0e74e9;
   color:#fff;
   padding:1px 5px 1px 5px;
   font-size:22px;
   font-weight:bold;
   }
 .center_detail_2{
-  border-left:8px solid #E90E0E;
+  border-left:8px solid #0e74e9;
   padding:20px 25px 0px 25px;
   }
 .center_detail_2 h1{
@@ -927,7 +927,7 @@ margin-right:0;
   font-size:22px;
   }
 .center_detail_4_right h4 a{
-  background: #E90E0E;
+  background: #0e74e9;
   color:#fff;
   padding:8px 30px 8px 30px;
   } 
@@ -951,7 +951,7 @@ margin-right:0;
    margin-top:30px;
    }
 .center_detail_box_2_left  p .tag_3  {
- background:#CD1D1F;
+ background:#0e74e9;
  border-radius:100%;
  padding:0;
  padding:7px 11px 7px 11px;
@@ -1027,7 +1027,7 @@ text-decoration:underline;
  background: #2c2c2c;
  margin-top:25px;
   margin-bottom:25px;
- border-top:5px solid #E90E0E;
+ border-top:5px solid #0e74e9;
  padding:10px 10px 15px 10px;
   }
 .center_detail_box_2_right_2 p{
@@ -1048,14 +1048,14 @@ margin-bottom:10px;
   }
 .center_detail_box_2_right_2_inner_right h5 a{
  color:#fff;
- background: #E90E0E;
+ background: #0e74e9;
  border-radius:40px;
  padding:11px 35px 11px 35px;
  letter-spacing:1px; 
   }
 .center_detail_box_2_right_2_inner_right h5 a:hover{
 background:#fff;
-color: #E90E0E;
+color: #0e74e9;
   }
 .center_detail_box_2_right_3 p{
   margin-bottom:20px;
@@ -1065,7 +1065,7 @@ color: #E90E0E;
   color: #141414;
   }
 .center_detail_box_2_right_3 p a{
-  color:#E90E0E;
+  color:#0e74e9;
   }
 .center_detail_box_2 .center_detail_box_1{
   margin-bottom:20px;
@@ -1096,7 +1096,7 @@ color: #E90E0E;
   letter-spacing:1px;
   }
 .center_detail_box_2_right_4_inner_1  span{
-background: #E90E0E;
+background: #0e74e9;
 font-size:24px;
 padding:0px 5px 0px 5px;
 float:left;
@@ -1212,7 +1212,7 @@ font-size:14px;
  color:#666; 
   }
 .comment_inner_inner_left .color_1{
-  color:#E90E0E;
+  color:#0e74e9;
   }
 .comment_inner_inner_left a{
   padding-left:10px;
@@ -1226,7 +1226,7 @@ font-size:14px;
   font-size:20px;
   }
 .comment_inner_inner_left .color_3 i{
-   color:#E90E0E;
+   color:#0e74e9;
    font-size:20px;
   }
 .comment_inner{
@@ -1247,14 +1247,14 @@ font-size:14px;
   }
 .comment_button h5 a{
  color:#fff;
- background: #E90E0E;
+ background: #0e74e9;
  border-radius:40px;
  padding:11px 35px 11px 35px;
  letter-spacing:1px; 
   }
 .comment_button h5 a:hover{
 background:#fff;
-color: #E90E0E;
+color: #0e74e9;
 border:2px solid #e0e0e0;
   }
   
@@ -1264,12 +1264,12 @@ border:2px solid #e0e0e0;
   }
 .news_tab .nav-tabs{
 border-bottom:none;
-border-bottom:4px solid  #E90E0E;
+border-bottom:4px solid  #0e74e9;
 margin-bottom:20px; 
   }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
     color: #555;
-    background-color: #E90E0E;
+    background-color: #0e74e9;
     border:none;
 	 color:#fff;
 }
@@ -1302,7 +1302,7 @@ background:#141414;
  margin-top:30px; 
   }
 .news_tab_last{
-  border-top:7px solid  #E90E0E;
+  border-top:7px solid  #0e74e9;
   background:#fff; 
   margin-bottom:40px;
    }
@@ -1483,7 +1483,7 @@ margin-top:30px;
 /*-----------------*/
 
 figure.effect-goliath {
-	background: #df4e4e;
+	background: #0e74e9;
 }
 
 figure.effect-goliath img,
@@ -1571,7 +1571,7 @@ figure.effect-goliath:hover p {
    border-radius:100%;
    font-size: 1.5em;
    color: #fff;
-   background: #E90E0E;
+   background: #0e74e9;
    padding:20px 25px 20px 25px;
 	}
 .contact_1 .text_1 i:hover{
@@ -1583,11 +1583,11 @@ figure.effect-goliath:hover p {
    border-radius:100%;
    font-size: 1.5em;
    color: #fff;
-   background: #E90E0E;
+   background: #0e74e9;
    padding:20px;
 	}
 .contact_1 .text_2 i:hover{
-  background:#c50b0b;
+  background:#0e74e9;
 	}
 .contact_1 h3{
    padding:0;
@@ -1602,7 +1602,7 @@ figure.effect-goliath:hover p {
   font-weight:bold;
 	}
 .contact_1  a:hover{
-	  color: #990000;
+	  color: #0e74e9;
 	}
 #contact .touch{
   padding:0;
@@ -1615,7 +1615,7 @@ figure.effect-goliath:hover p {
 		margin-top:15px;  
 			}
 .contact_3 a {
-	   background:#E90E0E;
+	   background:#0e74e9;
 	   color:#ffffff;
 	   padding:15px 40px 15px 40px; 
 	   border-radius:5px;
@@ -1623,7 +1623,7 @@ figure.effect-goliath:hover p {
 	   font-size:16px;
 			}
 .contact_3 a:hover {
-	   background: #c50b0b;
+	   background: #0e74e9;
 			}
 .contact_2 .form-control{
 	   min-height:50px; 

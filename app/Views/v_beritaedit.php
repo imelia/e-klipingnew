@@ -20,14 +20,14 @@
     	<div class="col-lg-12">
     		<div class="row">
             <div class="col-md-12">
-                    <label>Icon</label><br/>
-                    <?php
-                        if (!empty($berita->gambar_berita)) {
-                            echo '<img src="'.base_url("assets/img/berita/$berita->gambar_berita").'" width="150">';
-                        }
-                    ?>
+                    <label>File </label><br/>
+                    <?php if(!empty(session()->getFlashdata('notif'))){ ?>
+						<div class="alert alert-danger">
+				          <?php echo session()->getFlashdata('notif');?>
+				      </div>
+				  <?php } ?>
                     <div class="form-group">
-                         <input type="file" name="file_upload" class="form-control"> 
+                         <input type="file" accept="application/pdf" name="file_upload" class="form-control"> 
                     </div>  
                 </div>
     			<div class="col-md-12">

@@ -2,23 +2,25 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
 <!-- Sidebar - Brand -->
-<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+<a class="sidebar-brand d-flex align-items-center justify-content-center" href="/user">
   <div class="sidebar-brand-text mx-3">E-KLIPING</div>
 </a>
 
 <!-- Divider -->
 <hr class="sidebar-divider my-3">
 
-<!-- Heading -->
-<div class="sidebar-heading">
-  Navigation
-</div>
 
 <li class="nav-item">
   <a class="nav-link" href="<?= ('dashboard');?>">
     <i class="fas fa-fw fa-home"></i>
     <span>Dashboard</span></a>
 </li>
+
+<!-- Heading -->
+<div class="sidebar-heading">
+  Navigation
+</div>
+
 
 <!-- Nav Item - Charts -->
 <li class="nav-item">

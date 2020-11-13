@@ -25,7 +25,7 @@
 	</p>
    </div>
    <div class="footer_b_1 text-center clearfix">
-	 <p class="mgt col"> <a class="col" href="http://www.templateonweb.com">E-Kliping</a></p>
+	 <p class="mgt col"> <a class="col" href="/user">E-Kliping</a></p>
 	</div>
   </div>
  </div>

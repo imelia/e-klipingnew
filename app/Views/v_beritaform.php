@@ -25,7 +25,7 @@
 				      </div>
 				  <?php } ?>
             <div class="col-md-12">
-                    <label>Icon Berita</label>
+                    <label>File Berita</label>
                     <div class="form-group">
                          <input type="file" accept="application/pdf" name="file_upload" class="form-control is-invalid">
                     </div>
