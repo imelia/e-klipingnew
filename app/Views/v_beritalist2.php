@@ -58,7 +58,7 @@
   <a class="nav-link" href="<?= base_url('users');?>">
     <i class="fas fa-fw fa-users"></i>
     <span>Users</span></a>
-</li> 
+</li>
 
 <!-- Nav Item - Tables -->
 <li class="nav-item">
@@ -118,7 +118,7 @@
       <!-- Nav Item - User Information -->
       <li class="nav-item dropdown no-arrow">
         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <img class="img-profile rounded-circle" src="<?php echo base_url() ?>/assets/img/profile/user.png"> 
+          <img class="img-profile rounded-circle" src="<?php echo base_url() ?>/assets/img/profile/user.png">
         </a>
         <!-- Dropdown - User Information -->
         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -147,8 +147,8 @@
           <?php echo session()->getFlashdata('berhasil');?>
       </div>
   <?php } ?>
-  
-  <?php 
+
+  <?php
       $errors = $validation->getErrors();
       if(!empty($errors))
       {
@@ -160,7 +160,7 @@
   <div class="card-header py-3">
     <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
   </div>
-  
+
   <div class="card-body">
     <div class="table-responsive">
       <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -168,7 +168,7 @@
           <tr>
             <th>No</th>
             <th>Icon Berita</th>
-            <th>Judul Berita</th> 
+            <th>Judul Berita</th>
             <th>Kategori Berita</th>
             <th>Media Berita</th>
             <th>Tanggal</th>
@@ -180,14 +180,15 @@
           <td><?=$row['id_berita'];?></td>
           <td><?php
               if (!empty($row["gambar_berita"])) {
-                  echo '<img src="'.base_url("assets/img/berita/$row[gambar_berita]").'" width="100">';
+                echo '<embed src="'.base_url("assets/img/berita/$row[gambar_berita]").'" width="100px" height="100px" />';
+                  // echo '<img src="'.base_url("assets/img/berita/$row[gambar_berita]").'" width="100">';
               }
           ?></td>
           <td><?=$row['judul_berita'];?></td>
           <td><?=$row['kategori'];?></td>
           <td><?=$row['media'];?></td>
           <td><?=$row['tanggal'];?></td>
-          
+
           <td><a href="berita/form_edit/<?=$row['id_berita'];?>" class="btn btn-primary" onclick="return confirm('Apakah Anda yakin ingin mengedit berita <?php echo $row['judul_berita']; ?> ini?')">Edit</a> | <a href="berita/hapus/<?=$row['id_berita'];?>" class="btn btn-danger" onclick="return confirm('Apakah Anda yakin ingin menghapus berita <?php echo $row['judul_berita']; ?> ini?')">Hapus</a> </td>
       </tr>
       <?php endforeach;?>

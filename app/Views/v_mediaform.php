@@ -22,7 +22,7 @@
             <div class="col-md-12">
                     <label>Gambar Koran</label>
                     <div class="form-group">
-                         <input type="file" name="file_upload" class="form-control is-invalid"> 
+                         <input type="file" accept="application/pdf" name="file_upload" class="form-control is-invalid"> 
                     </div>  
                 </div>
     				<label>NAMA MEDIA</label>

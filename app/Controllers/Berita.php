@@ -30,7 +30,7 @@ class Berita extends BaseController
             return redirect()->to('berita');
         }
         $validation = $this->validate([
-            'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,image/jpg,image/jpeg,image/gif,image/png]|max_size[file_upload,4096]'
+            'file_upload' => 'uploaded[file_upload]|mime_in[file_upload,application/pdf]|max_size[file_upload,1024]'
         ]);
 
         if ($validation == FALSE) {
@@ -40,7 +40,7 @@ class Berita extends BaseController
               'media'  => $this->request->getPost('media'),
               'tanggal'  => $this->request->getPost('tanggal'),
           );
-          return redirect()->to('./berita/form')->with('notif', 'Type FIle Tidak Didukung (Upload Hanya Gambar)');
+          return redirect()->to('./berita/form')->with('notif', 'Type FIle Tidak Didukung (Upload Hanya PDF maks 1MB)');
         } else {
             $upload = $this->request->getFile('file_upload');
             $upload->move(WRITEPATH . '../public/assets/img/berita/');

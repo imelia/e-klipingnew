@@ -21,16 +21,13 @@
   <div class="row">
   <?php foreach ($user as $h) : ?>
    <div class="middle clearfix">
-    <div class="col-sm-3">
+    <div class="col-sm-12">
 	 <div class="middle_inner" style="margin-top:20px">
-     <a href="<?php echo base_url()?>/user/detail/<?php echo $h['id_berita']?>">
-       <!-- <img src="<?php echo base_url() ?>/assets/img/berita/<?= $h['gambar_berita']; ?>" width="100%" height="50%" alt="" class="img-fluid"> -->
-       <embed src="<?php echo base_url() ?>/assets/img/berita/<?= $h['gambar_berita']; ?>" width="100%" height="50%" alt="" class="img-fluid">
-
+     <a href="#"> <embed src="<?php echo base_url() ?>/assets/img/berita/<?= $h['gambar_berita']; ?>" width="100%" height="800px" alt="" class="img-fluid">
      <!-- <a href="detail.html"><img src="img/15.jpg" width="100%"></a> -->
-     <small class="firstsmall"><a class="bg-orange" href="<?php echo base_url()?>/user/detail/<?php echo $h['id_berita']?>" title=""><?= $h['kategori']; ?></a></small>
-	  <h6><a href="<?php echo base_url()?>/user/detail/<?php echo $h['id_berita']?>"><?= $h['tanggal']; ?> / <?= $h['media']; ?></a></h6>
-	  <p><a href="<?php echo base_url()?>/user/detail/<?php echo $h['id_berita']?>"><?= $h['judul_berita']; ?></a></p>
+     <small class="firstsmall"><a class="bg-orange" href="#" title=""><?= $h['kategori']; ?></a></small>
+	  <h6><a href="#"><?= $h['tanggal']; ?> / <?= $h['media']; ?></a></h6>
+	  <p><a href="#"><?= $h['judul_berita']; ?></a></p>
 	 </div>
     </div>
     <?php endforeach; ?>

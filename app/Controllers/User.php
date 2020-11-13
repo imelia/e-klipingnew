@@ -28,7 +28,7 @@ class User extends BaseController
     }
     public function search(){
       $keyword = $this->request->getPost('keyword');
-      $User = $this->ModelUser->like("judul_berita", $keyword,"both")->find();
+      $User = $this->ModelUser->like("judul_berita",$keyword,"both")->find();
 
       // die(var_dump($User));
 
@@ -38,6 +38,22 @@ class User extends BaseController
       ];
 
       echo view('templatenew/v_wrapper', $data);
+    }
+
+    public function detail(){
+      $uri = service('uri');
+      $id = $uri->getSegment(3);
+      // die(var_dump($id));
+      $User = $this->ModelUser->where("id_berita",$id)->find();
+
+      // die(var_dump($User));
+
+      $data = [
+          'judul' => 'Tampilan User',
+          'user' => $User
+      ];
+
+      echo view('templatenew/v_wrapper2', $data);
     }
 
 }
