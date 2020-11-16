@@ -6,9 +6,9 @@
    </div>
    <div class="col-sm-12 space_all cut_left cut_right_1">
      <div class="center_para">
-	  <h3 class="text-center"><a href="detail.html"> Lorem ipsum dolor sit amet, consectetur adipiscing elit Integer<br> nec odio Praesent libero. Sed cursus ante dapibus diam.</a></h3>
+	  <h3 class="text-center"><a href="detail.html"> <br> </a></h3>
 	  <p class="text-center">
-	  <a href="detail.html"> Fusce nec tellus sed augue semper porta Mauris massa Vestibulum lacinia arcu eget nulla.Class aptent taciti<br> sociosqu ad litora torquent.</a>
+	  <a href="detail.html"> </a>
 	  </p>
 	 </div>
    </div>
