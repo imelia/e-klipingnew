@@ -180,7 +180,7 @@
           <td><?=$row['id_berita'];?></td>
           <td><?php
               if (!empty($row["gambar_berita"])) {
-                echo '<embed src="'.base_url("assets/img/berita/$row[gambar_berita]").'" width="100px" height="100px" />';
+                echo '<embed src="'.base_url("assets/pdf/berita/$row[gambar_berita]").'" width="100px" height="100px" />';
                   // echo '<img src="'.base_url("assets/img/berita/$row[gambar_berita]").'" width="100">';
               }
           ?></td>
