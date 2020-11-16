@@ -40,10 +40,10 @@ class Berita extends BaseController
               'media'  => $this->request->getPost('media'),
               'tanggal'  => $this->request->getPost('tanggal'),
           );
-          return redirect()->to('./berita/form')->with('notif', 'Type FIle Tidak Didukung (Upload Hanya PDF maks 1MB)');
+          return redirect()->to('./berita/form')->with('notif', 'Type FIle Tidak Didukung (Upload Hanya PDF maks 5MB)');
         } else {
             $upload = $this->request->getFile('file_upload');
-            $upload->move(WRITEPATH . '../public/assets/pdf/berita/');
+            $upload->move(WRITEPATH . '../public/assets/img/berita/');
         $data = array(
             'judul_berita'  => $this->request->getPost('judul_berita'),
             'kategori'  => $this->request->getPost('kategori'),
@@ -84,10 +84,10 @@ class Berita extends BaseController
         } else {
         $dt = $model->PilihBerita($id)->getRow();
         $gambar_berita = $dt->gambar_berita;
-        $path = '../public/assets/pdf/berita/';
+        $path = '../public/assets/img/berita/';
         @unlink($path.$gambar);
             $upload = $this->request->getFile('file_upload');
-            $upload->move(WRITEPATH . '../public/assets/pdf/berita/');
+            $upload->move(WRITEPATH . '../public/assets/img/berita/');
         $data = array(
             'judul_berita'  => $this->request->getPost('judul_berita'),
             'kategori'  => $this->request->getPost('kategori'),
@@ -108,7 +108,7 @@ class Berita extends BaseController
         $dt = $model->PilihBerita($id)->getRow();
         $model->HapusBerita($id);
         $gambar_berita = $dt->gambar_berita;
-        $path = '../public/assets/pdf/berita/';
+        $path = '../public/assets/img/berita/';
         @unlink($path.$gambar_berita);
         return redirect()->to('./berita')->with('berhasil', 'Data Berhasil di Hapus');
     }
