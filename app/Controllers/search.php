@@ -22,31 +22,3 @@ class Dashboard extends BaseController
     echo view('admin/dashboard');
     echo view('global/footer');
   }
-  
-
-  public function dashboard()
-  {
-    // $Home = $this->Modeldashboard->findAll();
-
-    $data = [
-      'judul' => 'Dashboard',
-      'home' => $Home,
-    ];
-
-    echo view('/admin/dashboard', $data);
-  }
-}
-
-
-public function dashboard()
-{
-  // $Home = $this->Modeldashboard->findAll();
-
-  $data = [
-    'judul' => 'Dashboard',
-    'home' => $Home,
-  ];
-
-  echo view('/admin/dashboard', $data);
-}
-}
