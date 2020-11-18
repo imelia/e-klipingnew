@@ -6,9 +6,9 @@
    </div>
    <div class="col-sm-12 space_all cut_left cut_right_1">
      <div class="center_para">
-	  <h3 class="text-center"><a href=""> Detail Berita.</a></h3>
+	  <h3 class="text-center"><a href=""> Detail Berita. </a></h3>
 	  <p class="text-center">
-	  <a href=""> </a>
+	  <a href=""></a>
 	  </p>
 	 </div>
    </div>
